@@ -45,9 +45,11 @@ an application of the properties of arithmetic.
 \end{problem} 
 
 \begin{problem}Here is an example of the polynomial division algorithm:
-\[
-x^2 + 3x + 1\,\begin{tabular}[b]{@{}r@{}r} 
-$x-3$~~&\, R\,$9x+4$\\ 
+\begin{image}  
+\begin{tikzpicture}  
+\node at (0,0) {
+$x^2 + 3x + 1\,\begin{tabular}[b]{@{}r@{}r} 
+$x-3$~~&\, R\;$9x+4$\\ 
 \cline{1-1}
 \Big)\begin{tabular}[t]{@{}l@{}} \bigstrut[t] $x^3 + 0x^2 + x + 1$\\ 
 $x^3 + 3x^2 + x$ \\ 
@@ -57,8 +59,11 @@ $x^3 + 3x^2 + x$ \\
 \divrule{4}{12}
 ~~~~~~~~~~$9x + 4$
 \end{tabular}
-\end{tabular}
-\]
+\end{tabular}$
+};
+\end{tikzpicture}
+\end{image}
+
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
