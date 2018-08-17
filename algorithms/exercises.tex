@@ -166,14 +166,18 @@ of which operation(s) do you use?
 
 \begin{problem}Here is an example of a standard subtraction
   algorithm:\index{subtraction algorithm!standard}
-\[
-\begin{array}{@{}r@{}r@{}r@{}r@{}}
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {
+$\begin{array}{@{}r@{}r@{}r@{}r@{}}
 &   & 8 &  \\
 & 8 & \not{\hspace{-.2ex}9} & \hspace{.3ex}\leftexp{1}2\\
 - & 3 & 7 & 8\\ \hline
 & 5 & 1 & 4
-\end{array}
-\]
+\end{array}$
+};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
@@ -184,7 +188,9 @@ of which operation(s) do you use?
 
 \begin{problem}Here is an example of the subtraction by addition
   algorithm:\index{subtraction algorithm!by addition}
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 \begin{array}[c]{@{}r@{}}
 892\\
 -378\\ \hline
@@ -198,7 +204,9 @@ of which operation(s) do you use?
 3 + \textbf{5} &= 8
 \end{align*}
 \end{minipage}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
@@ -209,13 +217,17 @@ of which operation(s) do you use?
 
 \begin{problem}Here is an example of the Austrian subtraction
   algorithm:\index{subtraction algorithm!Austrian}
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 \begin{array}{@{}r@{}r@{}r@{}r@{}}
 & 8 & 9 & \hspace{.3ex}\leftexp{1}2\\
 - & 3 & \hspace{.3ex}\leftexp{8}{\hspace{-.8ex}\not{\hspace{0ex}7}} & 8\\ \hline
 & 5 & 1 & 4
 \end{array}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
@@ -273,9 +285,11 @@ of which operation(s) do you use?
 \end{problem} 
 
 \begin{problem}Here is an example of a standard division algorithm:
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 8\,\begin{array}[b]{@{}r@{}r} 
-97 &\, \text{R}1\\ 
+97 &\, \text{R}\;1\\ 
 \cline{1-1}
 \Big)\begin{array}[t]{@{}l@{}} 777\\ 
 72 \\ 
@@ -285,7 +299,9 @@ of which operation(s) do you use?
 ~~1
 \end{array}
 \end{array}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
@@ -296,7 +312,9 @@ of which operation(s) do you use?
 
 \begin{problem}\label{P:DS} Here is an example of the partial quotients
   algorithm:\index{division algorithm!partial-quotients}
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 8\,\begin{array}[b]{@{}r@{}} 
 7 \\
 90\\ 
@@ -310,7 +328,9 @@ of which operation(s) do you use?
 ~~1
 \end{array}
 \end{array}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
@@ -321,7 +341,9 @@ of which operation(s) do you use?
 
 \begin{problem}Here is another example of the partial-quotients division
   algorithm:\index{division algorithm!partial-quotients}
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 8\,\begin{array}[b]{@{}r@{}} 
 4\\
 10~\\
@@ -343,7 +365,9 @@ of which operation(s) do you use?
 ~~5
 \end{array}
 \end{array}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm---be sure to explain how
   this is different from the scaffolding division algorithm.
@@ -413,7 +437,9 @@ standard multiplication algorithm.
 \end{problem} 
 
 \begin{problem}Here is an example of the division algorithm without remainder:
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 4\,\begin{array}[b]{@{}l@{}} 
 ~0.75\\
 \hline
@@ -425,7 +451,9 @@ standard multiplication algorithm.
  \divrule{1}{3}
 \end{array}
 \end{array}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 \begin{enumerate}
 \item Describe how to perform this algorithm.
 \item Provide an additional relevant and revealing example
@@ -461,13 +489,17 @@ Recover the original problem and solution. Explain your reasoning.
 
 \begin{problem}In the following subtraction problem, every digit has been
   replaced with a letter.
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 \begin{tabular}{@{}r@{}}
 \texttt{DEFER}\\
 $-$\texttt{DU7Y}\\ \hline
 \texttt{N2G2}
 \end{tabular}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 Recover the original problem and solution. Explain your reasoning.
 \end{problem} \begin{problem}In the following two subtraction problems, every digit has been
   replaced with a letter.
@@ -516,7 +548,9 @@ Recover the original problem and solution. Explain your reasoning.
   except 7 was replaced by X.
 \settowidth\digitwidth{X}
 \def~{\hspace{\digitwidth}}
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 \text{XX}\,\begin{tabular}[b]{@{}r@{}}
 X\,7X \\ \hline
 \Big)\begin{tabular}[t]{@{}l@{}}
@@ -529,7 +563,9 @@ X\,7\,7 \\ \divrule{0}{3}
  \divrule{3}{2}
 \end{tabular}
 \end{tabular}
-\]
+$};
+\end{tikzpicture}
+\end{image}
 Recover the digits from this long division problem. Explain your
 reasoning.
 %% \begin{teachingnote}
@@ -542,7 +578,9 @@ reasoning.
 \begin{problem}The following is a long division problem where the various digits were
 replaced by X except for a single $8$. The double bar indicates that the remainder is 0.
 
-\[
+\begin{image}
+\begin{tikzpicture}
+\node at (0,0) {$
 \text{XXX}\,\begin{tabular}[b]{@{}r@{}}
 XX8XX \\ \hline
 \Big)\begin{tabular}[t]{@{}l@{}}
@@ -555,7 +593,10 @@ XXXXXXXX \\
  \divrule{4}{4}
 \end{tabular}
 \end{tabular}
-\]
+$};
+\end{tikzpicture}
+\end{image}
+
 Recover the digits from this long division problem. Explain your
 reasoning.
 
