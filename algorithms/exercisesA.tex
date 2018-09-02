@@ -4,7 +4,7 @@
 
 \input{../preamble.tex}
 
-\title{Algorithms}
+\title{Operations and Algorithms}
 \author{Bart Snapp and Brad Findell}
 \begin{document}
 \begin{abstract}
@@ -22,21 +22,32 @@ An operation $\star$ is \textit{associative} if $(a\star b)\star c = a\star (b\s
 \end{freeResponse}
 \end{problem} 
 
-\begin{problem}\label{P:MA}Consider the following pictures:
+\begin{problem}Consider the following pictures:
 \begin{image}
 \includegraphics{assMult.png}
 \end{image}
 Jesse claims that these pictures represent $(2\cdot 3)\cdot 4$ and
 $2\cdot (3\cdot 4)$.
 \begin{enumerate}
-\item Is Jesse's claim correct? Explain your reasoning.
+\item Is Jesse's claim correct? 
+\begin{multipleChoice}
+\choice[correct]{Yes.}
+\choice{No.}
+\choice{Not enough information.}
+\end{multipleChoice}
+\item Explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
 Jesse is correct.  The picture on the left is $4$ copies of $2\cdot 3$, and the picture on the right is $2$ copies of $3\dot 4$.  
 \end{hint}
 \end{freeResponse}
-\item Do Jesse's pictures show the associativity of multiplication? If
-  so, explain why. If not, draw new pictures representing $(2\cdot
+\item Do Jesse's pictures show the associativity of multiplication? 
+\begin{multipleChoice}
+\choice{Yes.}
+\choice[correct]{No.}
+\choice{Not enough information.}
+\end{multipleChoice}
+\item If so, explain why. If not, draw new pictures representing $(2\cdot
   3)\cdot 4$ and $2\cdot (3\cdot 4)$ that do show the associativity
   of multiplication.
 \begin{freeResponse}
@@ -69,15 +80,17 @@ But exponentiation does not distribute over addition because $(b+c)\wedge a \ne 
 \end{problem} 
 
 \begin{problem}Explain what it means for an operation $\star$ to be \textit{closed}
-  on a set of numbers. Give some relevant and revealing
-  examples and non-examples.
+  on a set of numbers. 
 \begin{freeResponse}
 \begin{hint}
-A set is closed under an operation $\star$ if for all $a$ and $b$ in the set, $a\star b$ and $b\star a$ are also in the set.  The counting numbers are closed under addition and also under multiplication but not under subtraction or division.  The set of even numbers (including $0$ and negatives) are closed under addition, subtraction, and multiplication.  The odd numbers, in contrast, are closed under multiplication but under neither addition nor subtraction.
+A set is closed under an operation $\star$ if for all $a$ and $b$ in the set, $a\star b$ and $b\star a$ are also in the set.  
 \end{hint}
 \end{freeResponse}
-%\begin{selectAll}
-%\end{selectAll}
+\begin{problem}
+Give some relevant and revealing examples and non-examples.
+The counting numbers are closed under addition and also under multiplication but not under subtraction or division.  The set of even numbers (including $0$ and negatives) are closed under addition, subtraction, and multiplication.  The odd numbers, in contrast, are closed under multiplication but under neither addition nor subtraction.
+
+\end{problem}
 \end{problem} 
 
 \begin{problem}Sometimes multiplication is described as \textit{repeated
@@ -96,18 +109,36 @@ Repeated addition by itself does not explain \textit{why} multiplication is comm
   calculated first or the discount? Explain your reasoning---be sure
   to use relevant terminology.  In particular, which property 
 of which operation(s) do you use?  
-\begin{freeResponse}
-\begin{hint}
+
+\textbf{Solution:}  We build up a solution in four steps: 
+\begin{enumerate}
+\item Use a specific starting price. 
+\item Generalize the process of computing a price after a discount (assuming no tax).  
+\item Generalize the process of computing a price with tax (assuming no discount). 
+\item Generalize the two together. 
+\end{enumerate}
+
 To get started, try a specific starting price, say $\$200$.  After the discount, the price would be $\$\answer{160}$.  After the tax, the cost is $\$\answer{184}$.  
 
 Now try the other order.  The original price with tax would be $\$\answer{230}$.  Then with the discount, the cost would be $\$\answer{184}$.  This specific example suggests that the order doesn't matter.  But did we just get lucky?  
 
-\end{hint}
-\begin{hint}
-For an explanation that works generally, let the list price be, say, $\$p$, and let's try the discount first.  The discount will be $\$\answer{0.2p}$.  So the price after the discount would $\answer{p} - \answer{0.2p}$.  And by the distributive property, this is equal to $\answer{0.8p}$.  In other words, rather than computing the discount and subtracting, we can directly compute the new price by multiplying the original price by $\answer{0.8}$.
-\end{hint}
-\end{freeResponse}
+\begin{problem}
+To compute a price after a $20\%$, discount, suppose the price is $\$p$.  The discount will be $\$\answer{0.2p}$.  So the price after the discount would $\answer{p} - \answer{0.2p}$.  And by the distributive property, this is equal to $\answer{0.8p}$.  In other words, rather than computing the discount and subtracting, we can directly compute the new price by multiplying the original price by $\answer{0.8}$.  This makes sense because with a discount of $20$ percent, the price we pay will be $\answer{80}$ percent of the original price.  
+\begin{problem}
+To compute a price with $15\%$ tax, suppose the price is $\$p$.  The tax will be $\$\answer{0.15p}$.  So the price with tax would $\answer{p} + \answer{0.15p}$.  And by the distributive property, this is equal to $\answer{1.15p}$.  In other words, rather than computing the tax and adding, we can directly compute the new price by multiplying the original price by $\answer{1.15}$.  This makes sense because with a tax of $15$ percent, the price we pay will be $\answer{115}$ percent of the original price.  
+\begin{problem}
+Again, let the starting price be $\$p$.  
+
+If we apply the discount and then the tax, we multiply $p$ first by $\answer{0.8}$ and then by $\answer{1.15}$, resulting in the expression $\answer{1.15\cdot 0.8p}$. 
+
+If, on the other hand, we apply the tax and then the discount, we multiply $p$ first by $\answer{1.15}$ and then by $\answer{0.8}$, resulting in the expression $\answer{0.8\cdot 1.15p}$. 
+
+These expressions are equal because of the \wordChoice{\choice{commutative}\choice[correct]{associative}\choice{distributive}} property of \wordChoice{\choice{addition}\choice{subtraction}\choice[correct]{multiplication}\choice{division}}.  Thus, the final cost is the same either way. 
+\end{problem}
 \end{problem} 
+\end{problem}
+\end{problem}
+
 
 \begin{problem}Money Bags Jon likes to give a tip of $20$\% when he is at
   restaurants. He does this by dividing his bill by $10$ and then
@@ -122,6 +153,11 @@ Because $10\%$ is the same as $1/10$ of the bill, and $20\%$ is twice that.
 \begin{problem}Regular Reggie likes to give a tip of $15$\% when he is at
   restaurants. He does this by dividing his bill by $10$ and then
   adding half more to this number. Explain why this works.
+\begin{freeResponse}
+\begin{hint}
+Because $10\%$ is the same as $1/10$ of the bill, $5\%$ is half that, and $15\%$ is the same as $10\% + 5\%$.  
+\end{hint}
+\end{freeResponse}
 \end{problem} 
 
 \begin{problem}Wacky Wally has a strange way of giving tips when he is at
