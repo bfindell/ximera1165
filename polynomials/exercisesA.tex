@@ -16,31 +16,40 @@ Problems about polynomials.
 \begin{freeResponse}
 \begin{hint}
 A polynomial in $x$ is an algebraic expression that can be written as a sum of terms, each of which is a whole-number power of $x$ multiplied by some real number.  
+
+Formally: For a whole number $n$, a \emph{polynomial (in $x$) of degree $n$} is an expression that can be written in the form 
+
+$$a_nx^n+a_{n-1}x^{n-1}+\dots+a_1x + a_0$$
+
+where the $a_i$'s are real numbers and $a_n\ne 0$.  
+A \emph{polynomial function of degree $n$} is a function that can be defined by a polynomial.  
+
 \end{hint}
 \end{freeResponse}
 \end{problem} 
 
-\begin{problem}
-Which of the following expressions are polynomials (select all):
-  \begin{selectAll}  
-    \choice[correct]{$x-2$}  
-    \choice{$\sqrt{x}$}
-    \choice[correct]{$1-x-x^2$}  
-    \choice{$e^x$}  
-    \choice[correct]{$56$}  
-    \choice{$\frac{2}{x}$}  
-  \end{selectAll}  
-\end{problem}
+%\begin{problem}
+%Which of the following expressions are polynomials (select all):
+%  \begin{selectAll}  
+%    \choice[correct]{$x-2$}  
+%    \choice{$\sqrt{x}$}
+%    \choice[correct]{$1-x-x^2$}  
+%    \choice{$e^x$}  
+%    \choice[correct]{$56$}  
+%    \choice{$\frac{2}{x}$}  
+%  \end{selectAll}  
+%\end{problem}
 
 \begin{problem}
 Indicate the degree of the following polynomials.  For expressions that are not polynomials, type NP.
 \[
 \begin{array}{cc}
- x-2 &     \answer{1} \\
+ 3x-3 &     \answer{1} \\
  \sqrt{x} & \answer[format=string]{NP} \\
  x^{15}  & \answer{15} \\
  1-x-x^2 & \answer{2} \\
- e^x     & \answer[format=string]{NP} \\
+ 2^x + x^2     & \answer[format=string]{NP} \\
+ (1+x)(2+x)x & \answer{3} \\
  56      & \answer{0} \\
  2/x & \answer[format=string]{NP}  
 \end{array}
@@ -78,9 +87,11 @@ Yes.  This is the fact we used to complete the previous two problems.
   are equal? Explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
-For whole numbers written in the same base, the answer is yes.  For decimals, the answer is no.  [Note: You will learn why and how later in the course.] 
+For whole numbers written in the same base, the answer is \wordChoice{\choice[correct]{yes}\choice{no}}.  
 
-For fractions, of course, the answer is no.  For example, $\frac{2}{3}=\frac{4}{6}$, and the ``digits'' of the fraction on the left are clearly different from those of the fraction on the right. 
+For decimals, the answer is \wordChoice{\choice{yes}\choice[correct]{no}}.  [Note: We will learn why and how later in the course.] 
+
+For fractions, of course, the answer is \wordChoice{\choice{yes}\choice[correct]{no}}.  For example, $\frac{2}{3}=\frac{4}{6}$, and the ``digits'' of the fraction on the left are clearly different from those of the fraction on the right. 
 \end{hint}
 \end{freeResponse}
 \end{problem} 
@@ -122,12 +133,7 @@ $x^3 + 3x^2 + x$ \\
 \end{tikzpicture}
 \end{image}
 
-\begin{enumerate}
-\item Describe how to perform this algorithm.
-\item Provide an additional relevant and revealing example
-  demonstrating that you understand the algorithm.
-\item Show the ``behind-the-scenes'' algebra that is going on here.
-\end{enumerate}\index{division algorithm!polynomial}
+Describe how to perform this algorithm:  
 \begin{freeResponse}
 \begin{hint}
 This is very much like the long division algorithm for counting numbers: 
@@ -135,17 +141,36 @@ This is very much like the long division algorithm for counting numbers:
 \item Write part of the quotient;
 \item Multiply that part of the quotient by the divisor;
 \item Subtract that product from the dividend; 
-\item Repeat until the remaining part of the dividend has a degree less than the degree of the divisor. 
+\item Repeat until the remaining part of the dividend is has a degree less than the degree of the divisor. 
 \end{enumerate}
+Note that, in the last step, what counts as ``less than'' is different for dividing polynomials than for dividing counting numbers.
 \end{hint}
 \end{freeResponse}
+
+%\begin{enumerate}
+%\item Describe how to perform this algorithm.
+%\item Provide an additional relevant and revealing example
+%  demonstrating that you understand the algorithm.
+%\item Show the ``behind-the-scenes'' algebra that is going on here.
+%\end{enumerate}\index{division algorithm!polynomial}
 \end{problem} 
+
+\begin{problem}
+Find the quotient and divisor when dividing $x^3+4x^2-1$ by $x+2$.  
+Quotient: $\answer{x^2+2x-4}$; remainder: $\answer{7}$. 
+\end{problem}
+
+\begin{problem}
+Find the quotient and divisor when dividing $x^3+4x^2-1$ by $x^2+1$.  
+Quotient: $\answer{x+4}$; remainder: $\answer{-x-5}$. 
+\end{problem}
+
 
 \begin{problem}State the \textit{Division Theorem} for polynomials. Give some
   relevant and revealing examples of this theorem in action.
 \begin{freeResponse}
 \begin{hint}
-Informally, when dividing a polynomial by a (non-zero) polynomial, we can always find a sensible quotient and remainder (both polynomials).  More formally, given $n(x)$ and a non-zero divisor $d(x)$, we can find $q(x)$ and $r(x)$ such that $\answer{n(x)=d(x)q(x)+r(x)}$ with the degree of $r(x)$ \wordChoice{\choice{greater than}\choice{equal to}\choice[correct]{less than}} the degree of $d(x)$.  
+Informally, when dividing a polynomial by a (non-zero) polynomial, we can always find a sensible quotient and remainder (both polynomials).  More formally, given $n(x)$ and a non-zero divisor $d(x)$, we can find $q(x)$ and $r(x)$ such that $n(x) = \answer{d(x)q(x)+r(x)}$ with the degree of $r(x)$ \wordChoice{\choice{greater than}\choice{equal to}\choice[correct]{less than}} the degree of $d(x)$.  
 \end{hint}
 \end{freeResponse}
 \end{problem} 
