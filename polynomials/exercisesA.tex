@@ -1,0 +1,154 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Polynomials}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Problems about polynomials.
+\end{abstract}
+\maketitle
+
+\begin{problem}Explain what is meant by a \textit{polynomial} in a variable $x$.  
+\begin{freeResponse}
+\begin{hint}
+A polynomial in $x$ is an algebraic expression that can be written as a sum of terms, each of which is a whole-number power of $x$ multiplied by some real number.  
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+\begin{problem}
+Which of the following expressions are polynomials (select all):
+  \begin{selectAll}  
+    \choice[correct]{$x-2$}  
+    \choice{$\sqrt{x}$}
+    \choice[correct]{$1-x-x^2$}  
+    \choice{$e^x$}  
+    \choice[correct]{$56$}  
+    \choice{$\frac{2}{x}$}  
+  \end{selectAll}  
+\end{problem}
+
+\begin{problem}
+Indicate the degree of the following polynomials.  For expressions that are not polynomials, type NP.
+\[
+\begin{array}{cc}
+ x-2 &     \answer{1} \\
+ \sqrt{x} & \answer[format=string]{NP} \\
+ x^{15}  & \answer{15} \\
+ 1-x-x^2 & \answer{2} \\
+ e^x     & \answer[format=string]{NP} \\
+ 56      & \answer{0} \\
+ 2/x & \answer[format=string]{NP}  
+\end{array}
+\]
+\end{problem}
+
+\begin{problem}Given:
+\[
+3x^7 -x^5 + x^4 -16x^3 + 27 = a_7 x^7 + a_6x^6 + a_5x^5 + a_4x^4 + a_3x^3 + a_2x^2 + a_1x^1 + a_0
+\]
+Find $a_0$, $a_1$, $a_2$, $a_3$, $a_4$, $a_5$, $a_6$, $a_7$.
+
+Answer: $a_0=\answer{27}$, $a_1=\answer{0}$, $a_2=\answer{0}$, $a_3=\answer{-16}$, $a_4=\answer{1}$, $a_5=\answer{-1}$, $a_6=\answer{0}$, $a_7=\answer{3}$.
+\end{problem} 
+
+\begin{problem}Given:
+\[
+6x^5+a_4 x^4 -x^2 + a_0 = a_5 x^5 - 24 x^4 + a_3 x^3 + a_2 x^2 - 5
+\]
+Find $a_0$, $a_1$, $a_2$, $a_3$, $a_4$, $a_5$.
+
+Answers: $a_0=\answer{-5}$, $a_1=\answer{0}$, $a_2=\answer{-1}$, $a_3=\answer{0}$, $a_4=\answer{-24}$, $a_5=\answer{6}$.
+\end{problem} 
+
+\begin{problem}Is it true that polynomials are equal if and only if their
+  coefficients are equal? Explain your reasoning.
+\begin{freeResponse}
+\begin{hint}
+Yes.  This is the fact we used to complete the previous two problems.
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+\begin{problem}Is it true that numbers are equal if and only if their digits
+  are equal? Explain your reasoning.
+\begin{freeResponse}
+\begin{hint}
+For whole numbers written in the same base, the answer is yes.  For decimals, the answer is no.  [Note: You will learn why and how later in the course.] 
+
+For fractions, of course, the answer is no.  For example, $\frac{2}{3}=\frac{4}{6}$, and the ``digits'' of the fraction on the left are clearly different from those of the fraction on the right. 
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+\begin{problem}Explain how to add two polynomials.  Explain, in particular, how ``collecting like terms'' is
+an application of the properties of arithmetic.  
+\begin{freeResponse}
+\begin{hint}
+Use the associative and commutative properties to rearrange the sum so that like terms are consecutive.  Then use the distributive property to ``collect'' the like terms. 
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+\begin{problem}Explain how to multiply two polynomials.
+\begin{freeResponse}
+\begin{hint}
+Use the distributive property:  Multiply each term in the first polynomial by each term in the second polynomial.  Then collect like terms.  
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+\begin{problem}Here is an example of the polynomial division algorithm:
+\begin{image}  
+\begin{tikzpicture}  
+\node at (0,0) {
+$x^2 + 3x + 1\,\begin{tabular}[b]{@{}r@{}r} 
+$x-3$~~&\, R\;$9x+4$\\ 
+\cline{1-1}
+\Big)\begin{tabular}[t]{@{}l@{}} \bigstrut[t] $x^3 + 0x^2 + x + 1$\\ 
+$x^3 + 3x^2 + x$ \\ 
+\divrule{0}{11}  
+\bigstrut[t]~~~$-3x^2 +0x + 1$\\
+~~~$-3x^2-9x -3$\\
+\divrule{4}{12}
+~~~~~~~~~~$9x + 4$
+\end{tabular}
+\end{tabular}$
+};
+\end{tikzpicture}
+\end{image}
+
+\begin{enumerate}
+\item Describe how to perform this algorithm.
+\item Provide an additional relevant and revealing example
+  demonstrating that you understand the algorithm.
+\item Show the ``behind-the-scenes'' algebra that is going on here.
+\end{enumerate}\index{division algorithm!polynomial}
+\begin{freeResponse}
+\begin{hint}
+This is very much like the long division algorithm for counting numbers: 
+\begin{enumerate} 
+\item Write part of the quotient;
+\item Multiply that part of the quotient by the divisor;
+\item Subtract that product from the dividend; 
+\item Repeat until the remaining part of the dividend has a degree less than the degree of the divisor. 
+\end{enumerate}
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+\begin{problem}State the \textit{Division Theorem} for polynomials. Give some
+  relevant and revealing examples of this theorem in action.
+\begin{freeResponse}
+\begin{hint}
+Informally, when dividing a polynomial by a (non-zero) polynomial, we can always find a sensible quotient and remainder (both polynomials).  More formally, given $n(x)$ and a non-zero divisor $d(x)$, we can find $q(x)$ and $r(x)$ such that $\answer{n(x)=d(x)q(x)+r(x)}$ with the degree of $r(x)$ \wordChoice{\choice{greater than}\choice{equal to}\choice[correct]{less than}} the degree of $d(x)$.  
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+
+\end{document}
