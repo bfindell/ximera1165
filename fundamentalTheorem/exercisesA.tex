@@ -1,0 +1,300 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Fundamental Theorem}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Problems about Unique Factorization.
+\end{abstract}
+\maketitle
+
+
+\begin{problem}
+Problem
+\begin{freeResponse}
+\begin{hint}
+Hint
+\end{hint}
+\end{freeResponse}
+\end{problem} 
+
+
+\begin{problem}
+Explain what the GCD of two integers is. Give some relevant and
+  revealing examples/nonexamples.
+\begin{freeResponse}
+\begin{hint}
+The GCD of $a$ and $b$ is the greatest common divisor of the two integers.  Imagine the following procedure: 
+\begin{enumerate}
+\item List the divisors of $a$.  
+\item List the divisors of $b$.  
+\item Compare the two lists to create a new list of divisors they have in common.  
+\item From the new list, identify the greatest of these common divisors.  
+\end{enumerate}
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Explain what the LCM of two integers is. Give some relevant and
+  revealing examples/nonexamples.
+\begin{freeResponse}
+\begin{hint}
+Note: Use ellipses (i.e., three dots) to indicate a continuing pattern.
+
+The LCM of $a$ and $b$ is the least common multiple of the two integers.  Imagine the following procedure: 
+\begin{enumerate}
+\item List the multiples of $a$.   
+\item List the multiples of $b$.  
+\item Compare the two lists to create a new list of multiples they have in common.  
+\item From the new list, identify the least of these common multiples.  
+\end{enumerate}
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+%\begin{problem}
+%Consider the Diophantine equation:
+%\[
+%15x + 4y = 1
+%\]
+%\begin{enumerate}
+%\item Find a solution to this equation. Explain your reasoning.
+%\item Compute the slope of the line $15x + 4y = 1$ and write it in
+%  lowest terms. Show your work.
+%\item Plot the line determined by $15x + 4y = 1$ on graph paper.
+%\item Using your plot and the slope of the line, explain how to find
+%  $10$ more solutions to the Diophantine equation above.
+%\end{enumerate}
+%\end{problem}
+%
+%\begin{problem}
+%Explain why a Diophantine equation 
+%\[
+%ax + by = c
+%\]
+%has either an infinite number of solutions or zero solutions.
+%\end{problem}
+%
+%\begin{problem}
+%Josh owns a box containing beetles and spiders. At the moment,
+%  there are $46$ legs in the box. How may beetles and spiders are
+%  currently in the box? Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%How many different ways can thirty coins (nickles, dimes, and
+%  quarters) be worth five dollars? Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%Lisa collects lizards, beetles and worms. She has more worms
+%  than lizards and beetles together. Altogether in the collection
+%  there are twelve heads and twenty-six legs. How many lizards does
+%  Lisa have?  Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%Can you make exactly \$$5$ with exactly $100$ coins assuming you
+%  can only use pennies, dimes, and quarters? If so how, if not why
+%  not?  Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%A merchant purchases a number of horses and bulls for the sum
+%  of $1770$ talers. He pays $31$ talers for each bull, and $21$ talers
+%  for each horse. How many bulls and how many horses does the merchant
+%  buy? Solve this problem, explain what a \textit{taler} is, and
+%  explain your reasoning---note this problem is an old problem by
+%  L.\ Euler, it was written in the $1700$'s.
+%\end{problem}
+%
+%\begin{problem}
+%A certain person buys hogs, goats, and sheep, totaling $100$
+%  animals, for $100$ crowns; the hogs cost him $3\frac{1}{2}$ crowns
+%  a piece, the goats $1\frac{1}{3}$ crowns, and the sheep go for
+%  $\frac{1}{2}$ crown a piece. How many did this person buy of each?
+%  Explain your reasoning---note this problem is an old problem from
+%  \textit{Elements of Algebra} by L.\ Euler, it was written in the
+%  $1700$'s.
+%\end{problem}
+
+\begin{problem}
+How many zeros are at the end of the following numbers:
+\begin{enumerate}
+\item $2^2 \cdot 5^8 \cdot 7^3\cdot 11^5$. There are $\answer{2}$ zeros. 	\begin{hint}Consider the 2s and 5s.  (Why?)\end{hint}
+\item $11!$. There are $\answer{2}$ zeros.
+\begin{hint}$11! = 11\cdot10\cdot9\dots2\cdot1$, and imagine its prime factorization.  There will be plenty of 2s. Count the 5s.\end{hint}
+\item $27!$. There are $\answer{6}$ zeros.
+ \begin{hint}If you were to write out the 27 factors, 5s are contributed by the following factors:  5, 10, 15, 20, 25.  And the 25 contributes a second 5.\end{hint}
+\item $99!$. There are $\answer{19+3}$ zeros. 
+  \begin{hint}Among the 99 factors, there are 19 multiples of 5 and 3 multiples of 25.\end{hint}
+\item $1001!$. There are $\answer{200+40+8+1}$ zeros
+  \begin{hint}Among the 1001 factors, there are 200 multiples of 5, 40 multiples of 25, 8 multiples of 125, and 625.\end{hint}
+\end{enumerate}
+In each case, explain your reasoning.
+\end{problem}
+
+\begin{problem}
+Decide whether the following statements are true or false. In
+  each case, a detailed argument and explanation must be given
+  justifying your claim.
+\begin{enumerate}
+\item $7|56$. \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}$56=7\cdot8$.\end{hint}
+\item $55|11$. \wordChoice{\choice{True}\choice[correct]{False}}
+  \begin{hint}But $11|55$.\end{hint}
+\item $3|40$. \wordChoice{\choice{True}\choice[correct]{False}}
+  \begin{hint}$40 = 3\cdot39 + 1$. Division by 3 gives remainder 1.\end{hint}
+\item $100 | (2^4\cdot 3^{17} \cdot 5^2\cdot 7)$
+  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}$100=2^25^2$.\end{hint}
+\item $5555 | (5^{20}\cdot 7^9\cdot 11^{11}\cdot 13^{23})$ 
+  \wordChoice{\choice{True}\choice[correct]{False}}
+  \begin{hint}$5555=5\cdot 11\cdot 101$. \end{hint}
+\item $3| (3+ 6 + 9 + \cdots +300 + 303)$
+   \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}3 divides each of the terms.\end{hint}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Suppose that 
+\[
+(3^5 \cdot 7^9 \cdot 11^x \cdot 13^y) | (3^a \cdot 7^b \cdot 11^{19} \cdot 13^7)
+\]
+What values of $a$, $b$, $x$ and $y$, make true statements? Explain
+your reasoning.
+\begin{itemize}
+\item $a$ \wordChoice{\choice[correct]{$\ge$}\choice{$=$}\choice{$\le$}} $\answer{5}$.
+\item $b$ \wordChoice{\choice[correct]{$\ge$}\choice{$=$}\choice{$\le$}} $\answer{9}$.
+\item $x$ \wordChoice{\choice{$\ge$}\choice{$=$}\choice[correct]{$\le$}} $\answer{19}$.
+\item $y$ \wordChoice{\choice{$\ge$}\choice{$=$}\choice[correct]{$\le$}} $\answer{7}$.
+\end{itemize}
+\end{problem}
+
+\begin{problem}
+Decide whether the following statements are true or false. In
+  each case, a detailed argument and explanation must be given
+  justifying your claim.
+\begin{enumerate}
+\item If $7|13a$, then $7|a$.  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}Follows from Euclid's Lemma because 7 is prime.\end{hint}
+\item If $6|49a$, then $6|a$.  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}Because $6=2\cdot3$ is not prime, we handle its prime factors separately.  
+  Because $6|49a$, both $2|49a$ and $3|49a$.  
+  Then $2|a$ and $3|a$ by Euclid's Lemma. Therefore $6|a$.\end{hint}
+\item If $10|65a$, then $10|a$. \wordChoice{\choice{True}\choice[correct]{False}}
+  \begin{hint}Counterexample: $a=2$.\end{hint}
+\item If $14|22a$, then $14|a$.  \wordChoice{\choice{True}\choice[correct]{False}}
+ \begin{hint}Counterexample: $a=7$.\end{hint}
+\item $54|931^{21}$.  \wordChoice{\choice{True}\choice[correct]{False}}
+ \begin{hint}$54$ is even (i.e., it has $2$ as a factor), but $931^{21}$ is not.\end{hint}
+\item $54|810^{33}$.  \wordChoice{\choice[correct]{True}\choice{False}}
+ \begin{hint}From $54 = 2\cdot3^3$ and $810 = 2\cdot 5\cdot 3^4$, 
+ we can see that $54|810$.\end{hint}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Joanna thinks she can see if a number is divisible by 24 by
+  checking to see if it's divisible by 4 and divisible by 6.  She
+  claims that if the number is divisible by 4 and by 6, then it must
+  be divisible by 24.
+
+Lindsay has a similar divisibility test for 24: She claims that if a
+number is divisible by 3 and by 8, then it must be divisible by 24.
+
+Are either correct?  Explain your reasoning.
+
+Joanna is \wordChoice{\choice{correct}\choice[correct]{incorrect}}.  
+Lindsay is \wordChoice{\choice[correct]{correct}\choice{incorrect}}.  
+\begin{hint}For Joanna, the least (positive) counterexample is $\answer{12}$.  Her method doesn't work because the $gcd(6,4) = \answer{2}$, so there are common multiples \emph{before} $6\cdot4$.  
+
+Lindsay's method, works because $gcd(3,8) = \answer{1}$, so every common multiple of $3$ and $8$ is also a multiple of $3\cdot8$.  
+\end{hint}
+\end{problem}
+
+%\begin{problem}
+%Generalize the problem above.
+%\end{problem}
+
+%\begin{problem}
+%Suppose that you have a huge bag of tickets. On each of the
+%  tickets is one of the following numbers. 
+%\[
+%\{6, 18, 21, 33, 45, 51, 57, 60, 69, 84\}
+%\]
+%Could you ever choose some combination of tickets (you can use as many
+%copies of the same ticket as needed) so that the numbers sum to 7429?
+%If so, give the correct combination of tickets. If not explain why
+%not.
+%\end{problem}
+
+\begin{problem}
+\label{P:helper} Decide whether the following statements are true
+  or false. In each case, a detailed argument and explanation must be
+  given justifying your claim.
+\begin{enumerate}
+\item If $a^2|b^2$, then $a|b$.  \wordChoice{\choice[correct]{True}\choice{False}}
+\begin{hint}However many times a prime appears in the prime factorizations of $a$, it will appear twice as many times in the prime factorization of $a^2$.  Same idea for $b$ and $b^2$. 
+Because $a^2|b^2$, we know that $b^2=ka^2$ for some integer $k$.  
+Both $b^2$ and $a^2$ must have an even number of factors any prime, which implies that $k$ must also have an even number of factors of that prime.  
+This means that $k$ is a perfect square, which is to say it is the square of some integer $c$.  Substituting $k=c^2$, we find that $b^2=c^2a^2=(ca)^2$.  Assuming $a, b, c > 0$, we have $b=ca$, which means that $a|b$.
+\end{hint}
+\item If $a|b^2$, then $a|b$.  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}Counterexample: $a=12$, $b=6$.\end{hint}
+\item If $a|b$ and $\gcd(a,b) = 1$, then $a = 1$.  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}Because $a|b$ there is an integer $k$ such that $b=ak$.  Because $\gcd(a,b) = 1$, every prime in the factorization of $b$ is not a factor of $a$ and therefore must be in $k$.  This implies that $k$ has the same prime factorization of $b$.  Assuming $a, b, k>0$, this means that $b=k$ and therefore $a=1$.\end{hint}
+\end{enumerate}
+\end{problem}
+
+%\begin{problem}
+%Betsy is factoring the number $24949501$. To do this, she
+%  divides by successively larger primes. She finds the smallest prime
+%  divisor to be $499$ with quotient $49999$. At this point she
+%  stops. Why doesn't she continue? Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%When Ann is half as old as Mary will be when Mary is three times
+%  as old as Mary is now, Mary will be five times as old as Ann is
+%  now. Neither Ann nor Mary may vote. How old is Ann? Explain your
+%  reasoning.
+%\end{problem}
+
+\begin{problem}
+Suppose $x$ and $y$ are integers.  If $x^2 = 11\cdot y$, what can you say about $y$? Explain your
+  reasoning.
+\begin{freeResponse}
+\begin{hint}
+Imagine comparing the prime factorizations of $x$, $x^2$, and $y$.  However many times a prime appears in the prime factorization of $x$, it will appear twice as many times in the prime factorization of $x^2$.  Because $11|(11y)$, it follows that $11|x^2$.  Because $x^2$ must have an even number of factors of $11$, $y$ will have an odd number of factors of $11$.  And $y$ will have an even number of each of its other prime factors.  
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Suppose $x$ and $y$ are integers.  If $x^2 = 25\cdot y$, what can you say about $y$? Explain your
+  reasoning.
+\begin{freeResponse}
+\begin{hint}
+because $x^2$, $25y^2$ and $25$ are all perfect squares, $y$ must also be a perfect square 
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+%\begin{problem}
+%When asked how many people were staying at the \textit{Hotel
+%  Chevalier}, the clerk responded ``The number you seek is the
+%  smallest positive integer such that dividing by $2$ yields a perfect
+%  square, and dividing by $3$ yields a perfect cube.'' How many people
+%  are staying at the hotel? Explain your reasoning.
+%\end{problem}
+
+
+
+\end{document}

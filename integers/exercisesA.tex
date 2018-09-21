@@ -1,0 +1,399 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Integers}
+\author{Bart Snapp and Brad Findell}
+\begin{document}
+\begin{abstract}
+Problems about integers.
+\end{abstract}
+\maketitle
+
+
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
+
+
+\begin{problem}
+Describe the set of integers. Give some relevant and revealing
+  examples/nonexamples.
+\begin{freeResponse}
+\begin{hint}
+Hint
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Explain how to model integer addition with pictures or
+  items. What relevant properties should your model show?
+\begin{freeResponse}
+\begin{hint}
+Hint
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Explain how to model integer multiplication with pictures or
+  items. What relevant properties should your model show?
+\end{problem}
+
+\begin{problem}
+Explain what it means for one integer to \textit{divide} another
+  integer. Give some relevant and revealing examples/nonexamples.
+\begin{freeResponse}
+\begin{hint}
+Hint
+\end{hint}
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Use the definition of \textit{divides} to decide whether the
+  following statements are true or false. In each case, an explanation must 
+be given justifying your claim.
+\begin{enumerate}
+\item $5|30$  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}$30=5\cdot6$.\end{hint}
+\item $7|41$  \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}There is no integer solution to $41=7k$.  But $41=7\cdot5+6$. \end{hint}
+\item $0|3$  \wordChoice{\choice{True}\choice[correct]{False}}
+  \begin{hint}There is no integer solution to $3=0k$.\end{hint}
+\item $3|0$ \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint}The solution to $0=3k$ is $k=0$.\end{hint}
+\item $6|(2^2\cdot 3^4\cdot 5 \cdot 7)$. \wordChoice{\choice[correct]{True}\choice{False}}
+\item $1000|(2^7\cdot 3^9\cdot 5^{11}\cdot 17^8)$ \wordChoice{\choice[correct]{True}\choice{False}}
+\item $6000|(2^{21}\cdot 3^{17}\cdot 5^{89}\cdot 29^{20})$. \wordChoice{\choice[correct]{True}\choice{False}}
+\begin{hint} $6=2\cdot3$, $1000 = 2^3\cdot5^3$, and $6000 = 2^4\cdot3\cdot5^3$.  In each case, the primes appear enough times in the second number.\end{hint}
+\end{enumerate}
+\end{problem}
+
+%\begin{problem}
+%\textit{Incognito's Hall of Shoes} is a shoe store that just
+%  opened in Myrtle Beach, South Carolina. At the moment, they have 100
+%  pairs of shoes in stock. At their grand opening 100 customers showed
+%  up. The first customer tried on every pair of shoes, the second
+%  customer tried on every 2nd pair, the third customer tried on every
+%  3rd pair, and so on until the 100th customer, who only tried on the
+%  last pair of shoes.
+%\begin{enumerate}
+%\item Which shoes were tried on by only 1 customer?
+%\item Which shoes were tried on by exactly 2 customers?
+%\item Which shoes were tried on by exactly 3 customers?
+%\item Which shoes were tried on by the most number of customers?
+%\end{enumerate}
+%Explain your reasoning.
+%\end{problem}
+
+\begin{problem}
+Factor the following integers:
+\begin{enumerate}
+\item $111$     $\answer{3\cdot 37}$
+\item $1234$    $\answer{2\cdot 617}$
+\item $2345$    $\answer{5\cdot 7\cdot 67}$
+\item $4567$    $\answer[format=string]{prime}$
+\item $111111$  $\answer{3\cdot 7\cdot 11\cdot 13 \cdot37}$
+\end{enumerate}
+In each case, how large a prime must you check before you can be sure
+of your answers? Explain your reasoning.
+\end{problem}
+
+%\begin{problem}
+%Which of the following numbers are prime?  Explain how could deduce whether the numbers are prime in
+%  as few calculations as possible:
+%\[
+%29 \qquad 53 \qquad 101 \qquad 359 \qquad 779 \qquad 839 \qquad 841
+%\]
+%In each case, describe precisely which computations are needed and
+%why those are the only computations needed.
+%\end{problem}
+%
+%\begin{problem}
+%Suppose you were only allowed to perform at most $7$
+%  computations to see if a number is prime. How large a number could
+%  you check?  Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%Find examples of integers $a$, $b$, and $c$ such that $a \mid
+%  bc$ but $a\nmid b$ and $a\nmid c$. Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%Can you find at least $5$ composite integers in a row? What
+%  about at least $6$ composite integers? Can you find $7$?
+%  What about $n$?  Explain your reasoning. Hint: Consider something
+%  like $5! = 5\cdot 4 \cdot 3 \cdot 2 \cdot 1$.
+%\end{problem}
+
+\begin{problem}
+% Use the definition of the \textit{greatest common divisor} to
+%  find the GCD of each of the pairs below. 
+%  In each case, a detailed argument and explanation must 
+%  be given justifying your claim.
+Find the greatest common divisors below:  
+\begin{enumerate}
+\item $\gcd(462,1463) = \answer{77}$  
+  \begin{hint} $462 = 2\cdot 3\cdot 7\cdot 11$;  $1463 = 7\cdot 11\cdot 19$.\end{hint}
+\item $\gcd(541,4669) = \answer{1}$. 
+  \begin{hint}$541$ is prime.  $4669 = 7\cdot 23\cdot 29$\end{hint}
+\item $\gcd(10000,2^5\cdot 3^{19}\cdot 5^7\cdot 11^{13}) = \answer{10000}$
+  \begin{hint}$10000 = 2^5\cdot5^5$.\end{hint}
+\item $\gcd(11111,2^{14}\cdot 7^{21}\cdot 41^{5}\cdot 101) = \answer{41}$
+  \begin{hint}$11111 = 41\cdot 271$\end{hint}
+\item $\gcd(437^5,8993^3) = \answer{23^5}$
+  \begin{hint}$437 = 19\cdot 23$, and $8993=17\cdot 23^2$.\end{hint}
+\end{enumerate}
+\end{problem}
+
+%\begin{problem}
+%Lisa wants to make a new quilt out of $2$ of her favorite
+%  sheets. To do this, she is going to cut each sheet into as large
+%  squares as possible while using the entire sheet and using whole
+%  inch measurements. 
+%\begin{enumerate}
+%\item If the first sheet is $72$ inches by $60$ inches what size
+%  squares should she cut? 
+%\item If the second sheet is $80$ inches by $75$ inches, what size
+%  squares should she cut? 
+%\item How she might sew these squares together? 
+%\end{enumerate}
+%Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%Deena and Doug like to feed birds. They want to put 16 cups of
+%  millet seed and 24 cups of sunflower seeds in their feeder.
+%\begin{enumerate}
+%\item How many total scoops of seed (millet or sunflower) are required
+%  if their scoop holds 1 cup of seed?
+%\item How many total scoops of seed (millet or sunflower) are required
+%  if their scoop holds 2 cups of seed?
+%\item How large should the scoop be if we want to minimize the total
+%  number of scoops?
+%\end{enumerate}
+%Explain your reasoning.
+%\end{problem}
+%
+%\begin{problem}
+%Consider the expression:
+%\[
+%d\,\begin{tabular}[b]{@{}r@{} r}
+%$q$ &\, R\,$r$\\ \cline{1-1}
+%\big)\begin{tabular}[t]{@{}l@{}}
+%$n$ 
+%\end{tabular}
+%\end{tabular}
+%\qquad\text{where}\qquad
+%\begin{tabular}{l}
+%$d$ is the divisor \\
+%$n$ is the dividend \\
+%$q$ is the quotient \\
+%$r$ is the remainder
+%\end{tabular}
+%\]
+%\begin{enumerate}
+%\item Give $3$ relevant and revealing examples of long division with
+%  remainders.
+%\item Given positive integers $d$, $n$, $q$, and $r$ how do you know
+%  if they leave us with a correct expression above?
+%\item Given positive integers $d$ and $n$, how many different sets of
+%  $q$ and $r$ can you find that will leave us with a correct
+%  expression above?
+%\item Give $3$ relevant and revealing examples of long division with
+%  remainders where some of $d$, $n$, $q$, and $r$ are negative.
+%\item Still allowing some of $d$, $n$, $q$, and $r$ to be negative,
+%  how do we know if they leave us with a correct expression above?
+%\end{enumerate}
+%\end{problem}
+%
+%\begin{problem}
+%State the \textit{Division Theorem} for integers. Give some
+%  relevant and revealing examples of this theorem in action.
+%\item Explain what it means for an integer to \textit{not} divide
+%  another integer. That is, explain symbolically what it should mean
+%  to write:
+%\[
+%a \nmid b
+%\]
+%\end{problem}
+
+\begin{problem}
+Consider the following:
+\begin{align*}
+20 \div 8 &= 2 \text{ remainder }4, \\
+28 \div 12 &= 2 \text{ remainder }4.
+\end{align*}
+Is it correct to say that $20 \div 8 = 28 \div 12$? \wordChoice{\choice{Yes}\choice[correct]{No}}
+
+Explain your reasoning.
+\begin{freeResponse}
+\begin{hint}
+The answer ``$2 \text{ remainder }4$'' is not a single number but rather a pair of numbers that play different roles.  Calling this pair of numbers ``equal'' is questionable.  Furthermore, in the division problems, the 2 is about different things: groups of 8 versus groups of 12.  
+\end{hint}
+\end{freeResponse}
+
+%\begin{problem} Explain how if 
+%\[
+%n = dq_0 + r_0
+%\]
+%and $r_0> d$, you can find new $q$ and $r$ such that $n = dq+r$ and
+%$0\le r< d$.
+\end{problem}
+
+\begin{problem}
+Give a formula for the $n$th even number: $\answer{2n}$
+% Show-off your formula with some examples.  
+\end{problem}
+
+\begin{problem}
+Give a formula for the $n$th odd number: $\answer{2n-1}$. 
+\end{problem}
+
+\begin{problem}
+Give a formula for the $n$th multiple of $3$:  $\answer{3n}$
+\end{problem}
+
+\begin{problem}
+Give a formula for the $n$th multiple of $-7$. $\answer{-7n}$
+\end{problem}
+
+\begin{problem}
+Give a formula for the $n$th number whose remainder when divided
+  by $5$ is $1$. 
+  
+  If the first such number is 1, the formula is $\answer{5n-4}$. 
+
+  If the first such number is 6, the formula is $\answer{5n+1}$. 
+\end{problem}
+%
+%\begin{problem}
+%Explain the rule
+%\[
+%\text{even} + \text{even} = \text{even}
+%\]
+%in two different ways. First give an explanation based on
+%pictures. Second give an explanation based on algebra. Your
+%explanations must be general, not based on specific examples.
+%\end{problem}
+%
+%\begin{problem}
+%Explain the rule
+%\[
+%\text{odd} + \text{even} = \text{odd}
+%\]
+%in two different ways. First give an explanation based on
+%pictures. Second give an explanation based on algebra.  Your
+%explanations must be general, not based on specific examples.
+%\end{problem}
+%
+%\begin{problem}
+%Explain the rule
+%\[
+%\text{odd} + \text{odd} = \text{even}
+%\]
+%in two different ways. First give an explanation based on
+%pictures. Second give an explanation based on algebra. Your
+%explanations must be general, not based on specific examples.
+%\end{problem}
+%
+%\begin{problem}
+%Explain the rule
+%\[
+%\text{even} \cdot \text{even} = \text{even}
+%\]
+%in two different ways. First give an explanation based on
+%pictures. Second give an explanation based on algebra. Your
+%explanations must be general, not based on specific examples.
+%\end{problem}
+%
+%\begin{problem}
+%Explain the rule
+%\[
+%\text{odd} \cdot \text{odd} = \text{odd}
+%\]
+%in two different ways. First give an explanation based on
+%pictures. Second give an explanation based on algebra. Your
+%explanations must be general, not based on specific examples.
+%\end{problem}
+%
+%\begin{problem}
+%Explain the rule
+%\[
+%\text{odd} \cdot \text{even} = \text{even}
+%\]
+%in two different ways. First give an explanation based on
+%pictures. Second give an explanation based on algebra. Your
+%explanations must be general, not based on specific examples.
+%\end{problem}
+%
+%\begin{problem}
+%Let $a\ge b$ be positive integers with $\gcd(a,b) =1$. Compute
+%  $\gcd(a +b, a-b)$. Explain your reasoning. Hints: 
+%\begin{enumerate}
+%\item Make a chart.
+%\item If $g|x$ and $g|y$ explain why $g|(x+y)$.
+%\end{enumerate}
+%\end{problem}
+%
+%\begin{problem}
+%Make a chart listing all pairs of positive integers whose
+%  product is $18$. Do the same for $221$, $462$, and $924$. Use this
+%  experience to help you explain why when factoring a number $n$, you
+%  only need to check factors less than or equal to $\sqrt{n}$.
+%\end{problem}
+%
+%\begin{problem}
+%\label{P:NNP}Matt is a member of the Ohio State University
+%  Marching Band. Being rather capable, Matt can take $x$ steps of size
+%  $y$ inches for all integer values of $x$ and $y$.  If $x$ is
+%  positive it means \textit{face North and take $x$ steps.} If $x$ is
+%  negative it means \textit{face South and take $|x|$ steps.} If $y$
+%  is positive it means your step is a \textit{forward step of $y$
+%    inches.} If $y$ is negative it means your step \textit{is a
+%    backward step of $|y|$ inches.}
+%    
+%% \fixnote{We need additional models, e.g., checks and bills, red and black chips. 
+%%    Some of these are incorporated into Activities \ref{A:integerAddition} and \ref{A:integerMultiplication}}
+%\begin{enumerate}
+%\item Discuss what the expressions $x \cdot y$ means in this
+%  context. In particular, what happens if $x = 1$? What if $y=1$?
+%\item Using the context above, write and solve a word problem that
+%  demonstrates the rule:
+%\[
+%\text{negative}\cdot \text{positive} = \text{negative}
+%\]
+%Clearly explain how your problem shows this.
+%\item Using the context above, write and solve a word problem that
+%  demonstrates the rule:
+%\[
+%\text{negative}\cdot \text{negative} = \text{positive}
+%\]
+%Clearly explain how your problem shows this.
+%\end{enumerate}
+%\end{problem}
+%
+%\begin{problem}
+%Stewie decided to count the pennies he had in his piggy bank. He
+%  decided it would be quicker to count by fives. However, he ended
+%  with two uncounted pennies. So he tried counting by twos but ended
+%  up with one uncounted penny. Next he counted by threes and then by
+%  fours, each time there was one uncounted penny. Though he knew he
+%  had less than a dollars worth of pennies, and more than 50 cents, he
+%  still didn't have an exact count. Can you help Stewie out? Explain
+%  your reasoning.
+%\end{problem}
+
+
+
+\end{document}
