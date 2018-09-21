@@ -98,14 +98,35 @@ be given justifying your claim.
 %Explain your reasoning.
 %\end{problem}
 
+
+\begin{javascript}
+function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num > 1;
+}
+
+function isPrimeFactorization(x,y) {
+  var terms = x.split('*').map( function(t) { return parseInt(t) } );
+  return terms.every( isPrime ) &&
+    (terms.reduce( function(a,c) { return a*c; }, 1 )) == parseInt(y);
+}
+\end{javascript}
+
+%Then $\answer[format=string,validator=isPrimeFactorization]{33}$ would
+%accept 3*11 and 11*3.  This doesn't work with powers or signs.
+
+
 \begin{problem}
-Factor the following integers.  If the integer is prime, type ``prime.''
+Factor the following integers.  Use * for multiplication and do not use exponents.  Enter the number itself if it is prime.
 \begin{enumerate}
-\item $111$     $\answer{3\cdot 37}$
-\item $1234$    $\answer{2\cdot 617}$
-\item $2345$    $\answer{5\cdot 7\cdot 67}$
-\item $4567$    $\answer[format=string]{prime}$
-\item $111111$  $\answer{3\cdot 7\cdot 11\cdot 13 \cdot37}$
+\item $15\qquad$ $3*5$
+\item $12\qquad$ $2*2*3$
+\item $111$     $\answer[format=string,validator=isPrimeFactorization]{3*37}$
+\item $1234$    $\answer[format=string,validator=isPrimeFactorization]{2*617}$
+\item $2345$    $\answer[format=string,validator=isPrimeFactorization]{5*7*67}$
+\item $4567$    $\answer[format=string,validator=isPrimeFactorization]{4567}$
+\item $111111$  $\answer[format=string,validator=isPrimeFactorization]{3*7*11*13*37}$
 \end{enumerate}
 %In each case, how large a prime must you check before you can be sure
 %of your answers? Explain your reasoning.
