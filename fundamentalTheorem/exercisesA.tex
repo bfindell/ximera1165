@@ -8,19 +8,19 @@
 \author{Bart Snapp and Brad Findell}
 \begin{document}
 \begin{abstract}
-Problems about Unique Factorization.
+Problems about unique factorization.
 \end{abstract}
 \maketitle
 
 
-\begin{problem}
-Problem
-\begin{freeResponse}
-\begin{hint}
-Hint
-\end{hint}
-\end{freeResponse}
-\end{problem} 
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
 
 
 \begin{problem}
@@ -133,7 +133,7 @@ How many zeros are at the end of the following numbers:
  \begin{hint}If you were to write out the 27 factors, 5s are contributed by the following factors:  5, 10, 15, 20, 25.  And the 25 contributes a second 5.\end{hint}
 \item $99!$. There are $\answer{19+3}$ zeros. 
   \begin{hint}Among the 99 factors, there are 19 multiples of 5 and 3 multiples of 25.\end{hint}
-\item $1001!$. There are $\answer{200+40+8+1}$ zeros
+\item $1001!$. There are $\answer{200+40+8+1}$ zeros.
   \begin{hint}Among the 1001 factors, there are 200 multiples of 5, 40 multiples of 25, 8 multiples of 125, and 625.\end{hint}
 \end{enumerate}
 In each case, explain your reasoning.
@@ -186,8 +186,14 @@ Decide whether the following statements are true or false. In
   \begin{hint}Follows from Euclid's Lemma because 7 is prime.\end{hint}
 \item If $6|49a$, then $6|a$.  \wordChoice{\choice[correct]{True}\choice{False}}
   \begin{hint}Because $6=2\cdot3$ is not prime, we handle its prime factors separately.  
-  Because $6|49a$, both $2|49a$ and $3|49a$.  
-  Then $2|a$ and $3|a$ by Euclid's Lemma. Therefore $6|a$.\end{hint}
+
+  Because $6|49a$, it must be that $2|49a$.  Then $2|a$ by Euclid's Lemma. 
+  
+  Similarly, because $6|49a$, it must be that $3|49a$.  Then $3|a$ by Euclid's Lemma. 
+  
+  Because both $2|a$ and $3|a$, it follows that $6|a$.
+  \end{hint}
+
 \item If $10|65a$, then $10|a$. \wordChoice{\choice{True}\choice[correct]{False}}
   \begin{hint}Counterexample: $a=2$.\end{hint}
 \item If $14|22a$, then $14|a$.  \wordChoice{\choice{True}\choice[correct]{False}}
@@ -213,10 +219,12 @@ Are either correct?  Explain your reasoning.
 
 Joanna is \wordChoice{\choice{correct}\choice[correct]{incorrect}}.  
 Lindsay is \wordChoice{\choice[correct]{correct}\choice{incorrect}}.  
+\begin{freeResponse}
 \begin{hint}For Joanna, the least (positive) counterexample is $\answer{12}$.  Her method doesn't work because the $gcd(6,4) = \answer{2}$, so there are common multiples \emph{before} $6\cdot4$.  
 
 Lindsay's method, works because $gcd(3,8) = \answer{1}$, so every common multiple of $3$ and $8$ is also a multiple of $3\cdot8$.  
 \end{hint}
+\end{freeResponse}
 \end{problem}
 
 %\begin{problem}
@@ -282,7 +290,7 @@ Suppose $x$ and $y$ are integers.  If $x^2 = 25\cdot y$, what can you say about 
   reasoning.
 \begin{freeResponse}
 \begin{hint}
-because $x^2$, $25y^2$ and $25$ are all perfect squares, $y$ must also be a perfect square 
+Because $x^2$, $25y^2$, and $25$ are all perfect squares, $y$ must also be a perfect square 
 \end{hint}
 \end{freeResponse}
 \end{problem}

@@ -28,35 +28,36 @@ Describe the set of integers. Give some relevant and revealing
   examples/nonexamples.
 \begin{freeResponse}
 \begin{hint}
-Hint
+The integers are the counting numbers, 0, and the opposites of the counting numbers.  
+\[\{ \dots, -3, -2, -1, 0, 1, 2, 3, \dots\}\]
 \end{hint}
 \end{freeResponse}
 \end{problem}
 
-\begin{problem}
-Explain how to model integer addition with pictures or
-  items. What relevant properties should your model show?
-\begin{freeResponse}
-\begin{hint}
-Hint
-\end{hint}
-\end{freeResponse}
-\end{problem}
-
-\begin{problem}
-Explain how to model integer multiplication with pictures or
-  items. What relevant properties should your model show?
-\end{problem}
-
-\begin{problem}
-Explain what it means for one integer to \textit{divide} another
-  integer. Give some relevant and revealing examples/nonexamples.
-\begin{freeResponse}
-\begin{hint}
-Hint
-\end{hint}
-\end{freeResponse}
-\end{problem}
+%\begin{problem}
+%Explain how to model integer addition with pictures or
+%  items. What relevant properties should your model show?
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem}
+%
+%\begin{problem}
+%Explain how to model integer multiplication with pictures or
+%  items. What relevant properties should your model show?
+%\end{problem}
+%
+%\begin{problem}
+%Explain what it means for one integer to \textit{divide} another
+%  integer. Give some relevant and revealing examples/nonexamples.
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem}
 
 \begin{problem}
 Use the definition of \textit{divides} to decide whether the
@@ -65,16 +66,18 @@ be given justifying your claim.
 \begin{enumerate}
 \item $5|30$  \wordChoice{\choice[correct]{True}\choice{False}}
   \begin{hint}$30=5\cdot6$.\end{hint}
-\item $7|41$  \wordChoice{\choice[correct]{True}\choice{False}}
+\item $7|41$  \wordChoice{\choice{True}\choice[correct]{False}}
   \begin{hint}There is no integer solution to $41=7k$.  But $41=7\cdot5+6$. \end{hint}
 \item $0|3$  \wordChoice{\choice{True}\choice[correct]{False}}
   \begin{hint}There is no integer solution to $3=0k$.\end{hint}
 \item $3|0$ \wordChoice{\choice[correct]{True}\choice{False}}
   \begin{hint}The solution to $0=3k$ is $k=0$.\end{hint}
 \item $6|(2^2\cdot 3^4\cdot 5 \cdot 7)$. \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint} $6=2\cdot3$, and $2\cdot3$ appears in factorization of the second number.\end{hint}
 \item $1000|(2^7\cdot 3^9\cdot 5^{11}\cdot 17^8)$ \wordChoice{\choice[correct]{True}\choice{False}}
+  \begin{hint} $1000 = 2^3\cdot5^3$, and these primes appear enough times in factorization of the second number.\end{hint}
 \item $6000|(2^{21}\cdot 3^{17}\cdot 5^{89}\cdot 29^{20})$. \wordChoice{\choice[correct]{True}\choice{False}}
-\begin{hint} $6=2\cdot3$, $1000 = 2^3\cdot5^3$, and $6000 = 2^4\cdot3\cdot5^3$.  In each case, the primes appear enough times in the second number.\end{hint}
+  \begin{hint} $6000 = 2^4\cdot3\cdot5^3$, and these primes appear enough times in factorization of the second number.\end{hint}
 \end{enumerate}
 \end{problem}
 
@@ -96,7 +99,7 @@ be given justifying your claim.
 %\end{problem}
 
 \begin{problem}
-Factor the following integers:
+Factor the following integers.  If the integer is prime, type ``prime.''
 \begin{enumerate}
 \item $111$     $\answer{3\cdot 37}$
 \item $1234$    $\answer{2\cdot 617}$
@@ -104,8 +107,8 @@ Factor the following integers:
 \item $4567$    $\answer[format=string]{prime}$
 \item $111111$  $\answer{3\cdot 7\cdot 11\cdot 13 \cdot37}$
 \end{enumerate}
-In each case, how large a prime must you check before you can be sure
-of your answers? Explain your reasoning.
+%In each case, how large a prime must you check before you can be sure
+%of your answers? Explain your reasoning.
 \end{problem}
 
 %\begin{problem}
@@ -144,13 +147,13 @@ of your answers? Explain your reasoning.
 Find the greatest common divisors below:  
 \begin{enumerate}
 \item $\gcd(462,1463) = \answer{77}$  
-  \begin{hint} $462 = 2\cdot 3\cdot 7\cdot 11$;  $1463 = 7\cdot 11\cdot 19$.\end{hint}
+  \begin{hint} $462 = 2\cdot 3\cdot 7\cdot 11$, and  $1463 = 7\cdot 11\cdot 19$.\end{hint}
 \item $\gcd(541,4669) = \answer{1}$. 
-  \begin{hint}$541$ is prime.  $4669 = 7\cdot 23\cdot 29$\end{hint}
+  \begin{hint}$541$ is prime.  And $4669 = 7\cdot 23\cdot 29$.\end{hint}
 \item $\gcd(10000,2^5\cdot 3^{19}\cdot 5^7\cdot 11^{13}) = \answer{10000}$
   \begin{hint}$10000 = 2^5\cdot5^5$.\end{hint}
 \item $\gcd(11111,2^{14}\cdot 7^{21}\cdot 41^{5}\cdot 101) = \answer{41}$
-  \begin{hint}$11111 = 41\cdot 271$\end{hint}
+  \begin{hint}$11111 = 41\cdot 271$.\end{hint}
 \item $\gcd(437^5,8993^3) = \answer{23^5}$
   \begin{hint}$437 = 19\cdot 23$, and $8993=17\cdot 23^2$.\end{hint}
 \end{enumerate}
@@ -239,7 +242,7 @@ Is it correct to say that $20 \div 8 = 28 \div 12$? \wordChoice{\choice{Yes}\cho
 Explain your reasoning.
 \begin{freeResponse}
 \begin{hint}
-The answer ``$2 \text{ remainder }4$'' is not a single number but rather a pair of numbers that play different roles.  Calling this pair of numbers ``equal'' is questionable.  Furthermore, in the division problems, the 2 is about different things: groups of 8 versus groups of 12.  
+The answer ``$2 \text{ remainder }4$'' is not a single number but rather a pair of numbers (a quotient and a remainder) that have different meanings.  In particular, the 2 is about different things: groups of 8 versus groups of 12.  Calling this pair of numbers ``equal'' is questionable.  
 \end{hint}
 \end{freeResponse}
 
