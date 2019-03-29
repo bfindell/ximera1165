@@ -14,6 +14,8 @@ More problems about algorithms.
 
 %\fixnote{Add a problem about the doubling/halving base-two multiplication algorithm....   Perhaps also include the Mysterious base-two game, or make it an activity.}
 
+% There is something wrong with the Tikz picture of algorithms
+
 \begin{problem}Here is an example of a standard addition algorithm:
 \begin{image}
 \begin{tikzpicture}
