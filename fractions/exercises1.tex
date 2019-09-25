@@ -133,6 +133,45 @@ We see that the rectangle is $\frac{\answer[given]{7}}{\answer[given]{2}}$ of th
 
 
 
+\begin{problem}
+Consider the following picture.
+
+\begin{center} \begin{tikzpicture}
+\draw[fill=red] (0,0)--(2,0)--(2,1)--(0,1)--(0,0);
+\draw[fill=red] (4,0)--(5,0)--(5,1)--(4,1)--(4,0);
+ \draw[thick] (0,0)--(2,0)--(2,1)--(0,1)--(0,0);
+ \draw[thick] (4,0)--(6,0)--(6,1)--(4,1)--(4,0);
+ \draw[thick] (8,0)--(10,0)--(10,1)--(8,1)--(8,0);
+ \draw[thick] (1,0)--(1,1);
+ \draw[thick] (5,0)--(5,1);
+ \draw[thick] (9,0)--(9,1);
+\end{tikzpicture}\end{center}
+
+
+What fraction of the entire picture is shaded?
+
+\begin{prompt}
+$\answer[given]{\frac{3}{6}}$
+\end{prompt}
+
+
+\begin{problem}
+Consider the picture as being composed of three rectangles.  What fraction of one rectangle is shaded?
+
+\begin{prompt}
+	$\answer[given]{\frac{3}{2}}$
+\end{prompt}
+
+\begin{problem}
+Consider the picture as being composed of six squares.  What fraction of one square is shaded?
+
+\begin{prompt}
+	$\answer[given]{\frac{3}{1}}$
+\end{prompt}
+\end{problem}
+\end{problem}
+\end{problem}
+
 
 \begin{problem}
 The image below depicts a fraction whose whole is the entire rectangle.  What fraction of the entire rectangle is shaded?
@@ -188,6 +227,52 @@ How could we have obtained Rectangle $A$'s drawing from the drawing of Rectangle
 \end{problem}
 
 
+
+
+\begin{problem}
+
+Zeke is adding $\frac	{2}{3} + \frac{3}{5}$.  He uses the following picture.
+
+\begin{center}\begin{tikzpicture}
+	\draw[fill=blue] (0,0)--(2,0)--(2,1)--(0,1)--(0,0);
+	\draw[fill=blue] (4,0)--(7,0)--(7,1)--(4,1)--(4,0);
+	\draw[thick] (0,0)--(3,0)--(3,1)--(0,1)--(0,0);
+	\draw[thick] (4,0)--(9,0)--(9,1)--(4,1)--(4,0);
+	\foreach \x in {1, 2, 5, 6, 7, 8} \draw[thick] (\x,0)--(\x,1);
+	\node at (3.5, 0.5) {$+$};
+	\node at (0, -1.5) {$=$};
+	\draw[fill=blue] (0, -2)--(5,-2)--(5,-1)--(0,-1)--(0,-2);
+	\draw[thick] (0,-2)--(8,-2)--(8,-1)--(0,-1)--(0,-2);
+	\foreach \y in {1, 2, 3, 4, 5, 6, 7} \draw[thick] (\y, -2)--(\y, -1);
+\end{tikzpicture}\end{center}
+
+He then reports that the answer is $\frac{5}{8}$.  What is right with Zeke's reasoning?  What is wrong with Zeke's reasoning?
+
+\begin{freeResponse}
+\begin{hint}
+	Zeke is right that we want to combine these two fractions.  However, if we were to combine them, we need to have the same size whole for the addition problem to make sense.  First, he should shade his fractions out of the same whole.  Then, he should cut all of his pieces so that they are the same size, and then combine those same-size pieces.
+\end{hint}
+\end{freeResponse}
+
+\end{problem}
+
+
+\begin{problem}
+What is the reasoning behind ``making a common denominator''?
+\begin{multipleChoice}
+	\choice{We always make common denominators when working with fractions.}
+	\choice[correct]{We make common denominators when we need the pieces in our fractions to be the same size.}
+	\choice{We make common denominators because you cannot add fractions if you don't make common denominators.}
+	\choice{We make common denominators so that the fractions are out of the same whole.}
+\end{multipleChoice}
+\end{problem}
+
+
+
+
+
+
+
 \begin{problem}
 What fraction of the entire rectangle is shaded?
 
@@ -213,6 +298,58 @@ We see that $\answer[given]{\frac{8}{30}}$ of the rectangle is shaded.
 	\end{hint}
 	\end{prompt}
 \end{problem}
+
+\end{problem}
+
+
+
+
+
+
+\begin{problem}
+A brownie recipe calls for $\frac{3}{2}$ of a cup of flour.  If you make $\frac{1}{12}$ of the brownie recipe, how much flour would you need?
+
+\begin{prompt}
+	You would need $\answer[given]{\frac{3}{24}}$ of a cup of flour.
+\end{prompt}
+\end{problem}
+
+
+
+
+\begin{problem}
+	Yesterday, $\frac{8}{3}$ of an inch of rain fell in Doug's garden.  Today, $\frac{2}{5}$ of an inch of rain fell in Doug's garden.  Over the two-day span, how much rain fell in Doug's garden?
+	
+	\begin{prompt}
+		$\answer[given]{\frac{8}{3}+\frac{2}{5}}$ of an inch of rain
+	\end{prompt}
+\end{problem}
+
+
+
+
+
+\begin{problem}
+Sue bought $19 \frac{3}{4}$ pounds of rice to host a very large party.  Sam bought $22 \frac{5}{8}$ pounds of rice to host an even larger party.  How much more rice did Sam buy than Sue?
+
+\begin{prompt}
+	Sam bought $\answer[given]{\frac{23}{8}}$ more pounds of rice.
+\end{prompt}
+
+\end{problem}
+
+
+
+
+\begin{problem}
+
+For several years, Mya has been depositing $\frac{2}{5}$ of her monthly paycheck into a savings account.  This month, Mya has to pay for car repairs, so she can only deposit $\frac{7}{8}$ of her usual deposit amount.  How much of her paycheck will Mya deposit this month?
+
+\begin{prompt}
+ Mya will deposit $\answer[given]{\frac{14}{40}}$ of \wordChoice{\choice[correct]{her paycheck} \choice{her usual deposit amount} \choice{a dollar}} in her savings account.
+\end{prompt}
+
+
 
 \end{problem}
 
