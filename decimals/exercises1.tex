@@ -1,0 +1,140 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Decimals}
+\author{Bart Snapp and Brad Findell and Jenny Sheldon}
+\begin{document}
+\begin{abstract}
+Problems about decimal numbers.
+\end{abstract}
+\maketitle
+
+
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
+
+
+\begin{problem}
+On the number line below, a point is marked $A$.  Select all options which could be candidates for the value of $A$.
+\begin{center}
+	\begin{tikzpicture}[scale=2]
+		\draw[<->] (-0.2,0) -- (4.2,0);
+		\foreach \x in {0.2, 0.4,...,1.8, 2.2, 2.4,...,3.8} \draw (\x, -0.1)--(\x, 0.1);
+		\draw (0, -0.2)--(0, 0.2);
+		\draw (2, -0.2)--(2, 0.2);
+		\draw (4, -0.2)--(4, 0.2);
+		\node at (0, -0.3) {$3.62$};
+		\node at (2, -0.3) {$3.63$};
+		\node at (4, -0.3) {$3.64$};
+		\draw[fill=black] (1.3456, 0) circle (1.5pt) node[below] {$A$};
+	\end{tikzpicture}
+\end{center}
+
+\begin{selectAll}
+	\choice[correct]{$3.6278$}
+	\choice[correct]{$3.627783$}
+	\choice{$3.68$}
+	\choice[correct]{$3.62788983$}
+	\choice{$3.629$}
+\end{selectAll}
+\end{problem}
+
+
+\begin{problem}
+Select all fractions below which have terminating decimal representation.
+\begin{selectAll}
+	\choice[correct]{$\frac{1}{10}$}
+	\choice{$\frac{1}{30}$}
+	\choice[correct]{$\frac{1}{80}$}
+	\choice[correct]{$\frac{1}{64}$}
+	\choice[correct]{$\frac{1}{125}$}
+	\choice[correct]{$\frac{1}{250}$}
+	\choice{$\frac{1}{385}$}
+	\choice[correct]{$\frac{1}{2048}$}
+	\choice{$\frac{1}{4228}$}
+	\choice[correct]{$\frac{1}{2^{19} \times 5^{47}}$}
+\end{selectAll}
+\end{problem}
+
+
+
+\begin{problem}
+A harder version of the previous problem: select all fractions below which have terminating decimal representation.
+\begin{selectAll}
+	\choice[correct]{$\frac{14}{10}$}
+	\choice[correct]{$\frac{6}{30}$}
+	\choice{$\frac{4}{60}$}
+	\choice{$\frac{7}{98}$}
+	\choice[correct]{$\frac{11}{125}$}
+	\choice[correct]{$\frac{3}{150}$}
+	\choice{$\frac{11}{385}$}
+	\choice{$\frac{2}{2049}$}
+	\choice[correct]{$\frac{1057}{4228}$}
+	\choice[correct]{$\frac{3^4 \times 7^{11} \times 19}{3^2 \times 5^{22} \times 19}$}
+\end{selectAll}
+\begin{hint}
+Don't forget to reduce the fractions to lowest terms!
+\end{hint}
+\end{problem}
+
+
+
+\begin{problem}
+Give an example of an irrational number.  For a challenge, don't pick $\pi$, $e$, or $\sqrt{p}$ where $p$ is prime.
+
+\begin{freeResponse}
+\begin{hint}
+One of my favorites is $0.01001000100001000001\dots$.  This number's decimal representation is neither terminating nor repeating, though it {\em does} have a pattern!
+\end{hint}
+\end{freeResponse}
+
+\end{problem}
+
+
+
+\begin{problem}
+Without doing the long division, after how many places would you expect $\frac{1}{47}$ to repeat?
+
+\begin{prompt}
+We expect the repetition to occur after at most $\answer[given]{46}$ places.
+\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+Without doing the long division, after how many places would you expect $\frac{3}{104}$ to repeat?
+
+\begin{prompt}
+We expect the repetition to occur after at most $\answer[given]{103}$ places.
+\end{prompt}
+\end{problem}
+
+
+
+\begin{problem}
+ We have seen that $0.\overline{9} = 1$.  Using these same ideas we saw in that argument, what are the following numbers equal to?
+ 
+ \begin{enumerate}
+ 	\item $1.\overline{9} = \answer{2}$
+	\item $0.5\overline{9} = \answer{0.6}$
+	\item $2.34\overline{9} = \answer{2.35}$
+	\item $0.87893\overline{9} = \answer{0.87894}$
+ \end{enumerate}
+\end{problem}
+
+
+
+
+\end{document}
+
+
+
