@@ -1,0 +1,278 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Arithmetic Sequences}
+\author{Bart Snapp and Brad Findell and Jenny Sheldon}
+\begin{document}
+\begin{abstract}
+Problems about arithmetic sequences.
+\end{abstract}
+\maketitle
+
+
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
+
+
+\begin{problem}
+Trish has a bank account which has $\$23$ currently.  She decides to set up a savings plan in which each week she will deposit $\$2$ more than the previous week.
+
+Would we use an arithmetic sequence to describe this situation?
+\begin{multipleChoice}
+\choice[correct]{Yes, this is an arithmetic sequence.}
+\choice{No, this is not an arithmetic sequence.}
+\end{multipleChoice}
+
+\begin{problem}
+Each Saturday, Tabitha goes to her local farmer's market.  Last week, she bought 4 ounces of almond flour, and this week she decided she needed twice as much almond flour as she did last week.  Quickly, she develops a habit of buying twice as much almond flour as the previous week each time she goes to the farmer's market.
+
+Would we use an arithmetic sequence to describe this situation?
+\begin{multipleChoice}
+\choice{Yes, this is an arithmetic sequence.}
+\choice[correct]{No, this is not an arithmetic sequence.}
+\end{multipleChoice}
+\end{problem}
+\end{problem}
+
+
+
+\begin{problem}
+Trish has a bank account which has $\$23$ currently.  She decides to set up a savings plan in which each week she will deposit $\$2$ more than the previous week.
+
+Fill out the following table corresponding to the balance in Trish's bank account $n$ weeks from now.
+\[
+\begin{array}{c|c} \hline
+n & \text{Account Balance} \\ \hline
+1 & \answer{25} \\
+2 & \answer{27} \\
+3 & \answer{29}\\
+4 & \answer{31}\\
+5 & \answer{33}\\
+6 & \answer{35}\\
+7 & \answer{37}\\
+8 & \answer{39}\\
+\end{array}
+\]
+\end{problem}
+
+
+
+\begin{problem}
+Trish has a bank account which has $\$23$ currently.  She decides to set up a savings plan in which each week she will deposit $\$2$ more than the previous week.
+
+How much money does Trish have in her bank account after $52$ weeks have passed?
+
+\begin{prompt}
+Trish has $\answer[given]{23+52*2}$ in her bank account.
+\end{prompt}
+\end{problem}
+
+
+
+
+\begin{problem}
+Trish has a bank account which has $\$23$ currently.  She decides to set up a savings plan in which each week she will deposit $\$2$ more than the previous week.
+
+Write an expression for the amount of money Trish will have in her bank account $n$ weeks from now.
+
+\begin{prompt}
+Trish will have $\answer[given]{23+52n}$ in her bank account.
+\end{prompt}
+\end{problem}
+
+
+
+
+
+\begin{problem}
+Terry is starting a small business.  In year $2$, they have $325$ customers, and based on previous growth, their goal is to increase the number of customers by $230$ each year.
+
+
+How many customers does Terry hope to have in year $5$?
+
+\begin{prompt}
+Terry hopes to have $\answer[given]{325+230*3}$ customers in year $5$.
+\end{prompt}
+\end{problem}
+
+
+
+
+\begin{problem}
+Terry is starting a small business.  In year $2$, they have $325$ customers, and based on previous growth, their goal is to increase the number of customers by $230$ each year.
+
+
+Write a recursive formula for the number of customers Terry has in year $n$, using ``Next'' and ``Now'' to describe the situation.
+
+\begin{prompt}
+Terry hopes to have \wordChoice{\choice[correct]{Next} \choice{Now} \choice{$n$} \choice{230} \choice{325}} $=$ \wordChoice{\choice{Next} \choice[correct]{Now} \choice{$n$} \choice{230} \choice{325}} $+$ \wordChoice{\choice{Next} \choice{Now} \choice{$n$} \choice[correct]{230} \choice{325}}.
+\end{prompt}
+\end{problem}
+
+
+
+\begin{problem}
+Terry is starting a small business.  In year $2$, they have $325$ customers, and based on previous growth, their goal is to increase the number of customers by $230$ each year.
+
+
+Write a recursive formula for the number of customers Terry has in year $n$, using ``$f(n+1)$'' and ``$f(n)$'' to describe the situation.
+
+\begin{prompt}
+Terry hopes to have \wordChoice{\choice[correct]{$f(n+1)$} \choice{$f(n)$} \choice{$n$} \choice{230} \choice{325}} $=$ \wordChoice{\choice{$f(n+1)$} \choice[correct]{$f(n)$} \choice{$n$} \choice{230} \choice{325}} $+$ \wordChoice{\choice{$f(n+1)$} \choice{$f(n)$} \choice{$n$} \choice[correct]{230} \choice{325}}.
+\end{prompt}
+\end{problem}
+
+
+
+
+
+\begin{problem}
+Tripp is training for a bike ride across the state.  In week 8 of his training, he rode $32.2$ miles.  Each week, his trainer has recommended that he ride $6.3$ miles more than he did the previous week.
+
+How far will Tripp ride in week 12 of his training?
+
+\begin{prompt}
+Tripp will ride $\answer[given]{32.2 + 6.3*4}$ miles in week 12.
+\end{prompt}
+\end{problem}
+
+
+
+\begin{problem}
+Tripp is training for a bike ride across the state.  In week 8 of his training, he rode $32.2$ miles.  Each week, his trainer has recommended that he ride $6.3$ miles more than he did the previous week.
+
+Write a recursive function for the number of miles $f(n)$ Tripp will ride in week $n$ of his training.  Use $f(n-1)$ in your equation.
+
+\begin{prompt}
+Tripp will ride $f(n) = \answer[given]{f(n-1) + 6.3}$ miles in week $n$.
+\end{prompt}
+\end{problem}
+
+
+
+\begin{problem}
+Tripp is training for a bike ride across the state.  In week 8 of his training, he rode $32.2$ miles.  Each week, his trainer has recommended that he ride $6.3$ miles more than he did the previous week.
+
+Write an explicit function for the number of miles $f(n)$ Tripp will ride in week $n$ of his training.
+
+\begin{prompt}
+Tripp will ride $f(n) = \answer[given]{32.2 + 6.3*(n-8)}$ miles in week $n$.
+\end{prompt}
+\end{problem}
+
+
+
+
+\begin{problem}
+Tripp is training for a bike ride across the state.  In week 8 of his training, he rode $32.2$ miles.  Each week, his trainer has recommended that he ride $6.3$ miles more than he did the previous week.
+
+During what week will Tripp first ride more than $200$ miles?
+
+\begin{prompt}
+Tripp will ride more than $200$ miles beginning in week $\answer[given]{27}$.
+\end{prompt}
+\end{problem}
+
+
+
+
+
+\begin{problem}
+Therese is monitoring her neighborhood swimming pool as it fills with water at a constant rate of $16$ gallons per minute.  After $20$ minutes, the pool has $454$ gallons.  How much water did the pool have before Therese began filling the pool?
+
+\begin{prompt}
+The pool had $\answer[given]{134}$ gallons when Therese began.
+\end{prompt}
+\end{problem}
+
+
+
+
+\begin{problem}
+Therese is monitoring her neighborhood swimming pool as it fills with water at a constant rate of $16$ gallons per minute.  After $20$ minutes, the pool has $454$ gallons.  Write an equation for the number of gallons in the pool after $n$ minutes.
+
+\begin{prompt}
+The pool has $f(n) = \answer[given]{134+16n}$ gallons after $n$ minutes.
+\end{prompt}
+\end{problem}
+
+
+
+
+\begin{problem}
+Assume the sequence below is an arithmetic sequence.  Fill in the blanks.
+
+\[
+\answer{-5}, -1, 3, \answer{7}, \answer{11}, \answer{15}, \answer{19}, \dots
+\]
+
+\end{problem}
+
+
+
+
+
+\begin{problem}
+Assume the sequence below is an arithmetic sequence.  Fill in the blanks.
+
+\[
+\dots, \answer{-5}, -10, \answer{-15}, \answer{-20}, \answer{-25}, -30, \answer{-35}, \dots
+\]
+
+\end{problem}
+
+
+
+
+\begin{problem}
+Assume the sequence below is an arithmetic sequence.  Fill in the blanks.
+
+\[
+\dots, \answer{2.7}, \answer{3.3}, 3.9, \answer{4.5}, \answer{5.1}, 5.7, \answer{6.3}, \dots
+\]
+
+\end{problem}
+
+
+
+
+\begin{problem}
+Imagine drawing a graph like the one below to represent each of the situations with Trish, Terry, Tripp, and Therese.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[->, thick] (-1, 0)--(8,0);
+\draw[->, thick] (0,-1)--(0, 8);
+\foreach \x in {1, 2, 3, 4, 5, 6} \draw[fill=black] (\x, \x+1) circle (2pt);
+\end{tikzpicture}
+\end{center}
+
+In which of the situations does it make sense to connect the dots with a line?
+\begin{selectAll}
+\choice{Trish and her bank account.}
+\choice{Terry and their small business.}
+\choice{Tripp and his bike travel.}
+\choice[correct]{Therese and the swimming pool.}
+\end{selectAll}
+
+
+
+
+\end{problem}
+
+
+
+
+\end{document}
+
+
+
