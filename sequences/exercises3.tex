@@ -23,6 +23,82 @@ Problems about series.
 %\end{problem} 
 
 
+\begin{problem}
+Raj has a bank account that currently contains $\$23$.  He begins a savings plan in which he will add $\$2$ to his account each month.  
+
+\begin{enumerate}
+\item What is the total amount of money in Raj's bank account after $6$ months (i.e. $6$ deposits)? \begin{prompt} $\$\answer[given]{35}$\end{prompt}
+\item What is the total amount of money in Raj's bank account after $60$ months (i.e. $60$ deposits)? \begin{prompt} $\$\answer[given]{143}$\end{prompt}
+\item What is the total amount of money in Raj's bank account after $n$ months (i.e. $n$ deposits)? \begin{prompt} $\$\answer[given]{23+6n}$ \end{prompt}
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Randy has a bank account that currently contains $\$23$.  He begins a savings plan in which he will add $\$2$ more to his account each month than he did the previous month.  Since he didn't add any money last month, in the first month he adds $\$2$, and then in the second month he adds $\$4$, etc.  
+
+\begin{enumerate}
+\item What is the total amount of money in Randy's bank account after $6$ months (i.e. $6$ deposits)? \begin{prompt} $\$\answer[given]{65}$\end{prompt}
+\item What is the total amount of money in Randy's bank account after $60$ months (i.e. $60$ deposits)? \begin{prompt} $\$\answer[given]{3683}$\end{prompt}
+\item What is the total amount of money in Raj's bank account after $n$ months (i.e. $n$ deposits)? \begin{prompt} $\$\answer[given]{23+n+n^2}$\end{prompt}
+\end{enumerate}
+\end{problem}
+
+
+
+\begin{problem}
+Ramon has a bank account that currently contains $\$23$.  He begins a savings plan in which he will add $20\%$ of the account's current value to his account each month.  
+
+\begin{enumerate}
+\item What is the total amount of money in Ramon's bank account after $6$ months (i.e. $6$ deposits)?  Give your answer to the nearest cent. \begin{prompt} $\$\answer[given]{68.68}$\end{prompt}
+\item What is the total amount of money in Ramon's bank account after $60$ months (i.e. $60$ deposits)? Give your answer to the nearest cent. \begin{prompt} $\$\answer[given]{1295992.83}$\end{prompt}
+\item What is the total amount of money in Raj's bank account after $n$ months (i.e. $n$ deposits)?  Give a formula to calculate the exact answer. \begin{prompt} $\$\answer[given]{23(1.2)^n}$\end{prompt}
+\end{enumerate}
+\end{problem}
+
+
+
+\begin{problem}
+Billy is a bouncing ball.  He is dropped from a height of $13$ feet and each bounce goes up $92\%$ of the bounce before it.  Assume that the first time Billy hits the ground is bounce 1.  In other words, at bounce zero, Billy is at a height of 13 feet, but has not traveled anywhere.  After traveling down to the ground and returning up to some fraction of his previous height, Billy has completed bounce 1.  How far has Billy traveled when he has completed $38$ bounces?
+
+Let's begin to get a feeling for this problem by filling out a few tables.  Here's the first one.
+\[
+\begin{array}{c|c} \hline
+n & \text{Distance covered during bounce $n$ only} \\ \hline
+0 & \answer{0} \\
+1 & \answer{13+13(0.92)} \\
+2 & \answer{13(0.92)+13(0.92)^2}\\
+3 & \answer{13(0.92)^2 + 13(0.92)^3}\\
+\end{array}
+\]
+
+Here's another table that might help.
+\[
+\begin{array}{c|c} \hline
+n & \text{Distance covered through bounce $n$} \\ \hline
+0 & \answer{0} \\
+1 & \answer{13+13(0.92)} \\
+2 & \answer{13+13(0.92)+13(0.92)+13(0.92)^2}\\
+3 & \answer{13+13(0.92)+13(0.92)+13(0.92)^2+13(0.92)^2 + 13(0.92)^3}\\
+\end{array}
+\]
+
+Now, generalize!  How far has Billy traveled through bounce $38$?
+
+\begin{prompt}
+Billy has traveled a total of $\answer[given]{13+13(0.92)^{38} + 299(1-(0.92)^{38})}$ feet.
+\end{prompt}
+
+\end{problem}
+
+
+\begin{problem}
+In the previous problem, how far has Billy traveled through bounce $n$?
+
+\begin{prompt}
+Billy has traveled $\answer[given]{13+13(0.92)^n + 299(1-(0.92)^n)}$ feet.
+\end{prompt}
+\end{problem}
 
 
 
