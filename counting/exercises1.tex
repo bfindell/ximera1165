@@ -1,0 +1,193 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Counting}
+\author{Bart Snapp and Brad Findell and Jenny Sheldon}
+\begin{document}
+\begin{abstract}
+Problems about counting and probability.
+\end{abstract}
+\maketitle
+
+
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
+
+
+\begin{problem}
+	Which of the following situations are the same type of counting situation?
+	
+	\begin{selectAll}
+		\choice{The number of ways to see two threes on four rolls of a 6-sided die.}
+		\choice[correct]{The number of ways to flip a coin four times and see two heads.}
+		\choice{The number of ways to elect a President and Vice President from a group of four people.}
+		\choice[correct]{The number of ways to choose two students from a class of four.}
+		\choice[correct]{The number of ways to choose two different scoops of ice cream from a shop offering four flavors.}
+		\choice{The number of ways to choose two scoops of ice cream which are the same flavor from a shop offering four flavors.}
+	\end{selectAll}
+\end{problem}
+
+
+\begin{problem}
+Use the Binomial Theorem to expand $(a+b)^4$.
+\begin{prompt}
+ $\answer{a^4+4a^3b+6a^2b^2+4ab^3+b^4}$
+\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+Use the Binomial Theorem to expand $(3-x)^6$.
+\begin{prompt}
+ $\answer{3^6-6*3^5x+15*3^4x^2-20*3^3-x^3+15*9x^4-6*3x^5+x^6}$
+\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+Explain why ${n \choose k} = {n \choose n-k}$.
+\begin{freeResponse}
+	\begin{hint}
+		Using the context of the stop lights, ${n \choose k}$ represents $k$ green lights out of a total of $n$ lights.  Remembering that $k$ green lights also means $n-k$ red lights, we could simply exchange the role of red lights and green lights, we see the result.  Remember that you should be able to use two contexts to explain this pattern!
+	\end{hint}
+\end{freeResponse}
+\end{problem}
+
+
+
+\begin{problem}
+Explain why the sum of the entries in the $n$-th row of Pascal's Triangle is $2^n$.
+\begin{freeResponse}
+	\begin{hint}
+		Using the context of the pizza shop, the $n$-th row of Pascal's Triangle represents the total number of pizzas we could make if there are $n$ toppings available.  We could also count the number of pizzas as $2 \times 2 \times ... \times 2 = 2^n$, where we have two options for each pizza topping: on or off the pizza.  Remember that you should be able to use two contexts to explain this pattern!
+	\end{hint}
+\end{freeResponse}
+\end{problem}
+
+
+
+\begin{problem}
+	You flip a coin $5$ times.  How many different ways are there to flip two heads?
+	\begin{prompt}
+		$\answer[given]{10}$
+	\end{prompt}
+\end{problem}
+
+\begin{problem}
+	You flip a coin $5$ times.  How many different ways are there to flip at least two heads?
+	\begin{prompt}
+		$\answer[given]{26}$
+	\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+	You flip a coin $5$ times.  How many different outcomes are there?
+	\begin{prompt}
+		$\answer[given]{2^5}$
+	\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+	You flip a coin $5$ times.  What is the probability that you flip exactly two heads?
+	\begin{prompt}
+		$\answer[given]{\frac{10}{32}}$
+	\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+	You flip a coin $5$ times.  What is the probability that you flip at least two heads?
+	\begin{prompt}
+		$\answer[given]{\frac{16}{32}}$
+	\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+	You flip a coin $5$ times.  What is the probability that your result was HHTTT?
+	\begin{prompt}
+		$\answer[given]{\frac{1}{32}}$
+	\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+	You flip a coin $5$ times, and you get two heads.  What is the probability that your result was HHTTT?
+	\begin{prompt}
+		$\answer[given]{\frac{1}{10}}$
+	\end{prompt}
+\end{problem}
+
+\begin{problem}
+In your own words, summarize the similarities and differences between the previous problems.
+
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+
+\begin{problem}
+A certain passcode is made by choosing two digits in $0$ to $9$ followed by three shapes (square, triangle, circle, or star).  How many such passcodes can be made?
+\begin{prompt}
+	$\answer[given]{10*10*4*4*4}$
+\end{prompt}
+\end{problem}
+
+
+
+\begin{problem}
+A certain passcode is made by choosing two digits in $0$ to $9$ followed by three shapes (square, triangle, circle, or star).  How many such passcodes can be made if you cannot choose the same number or same shape more than once?
+\begin{prompt}
+	$\answer[given]{10*9*4*3*2}$
+\end{prompt}
+\end{problem}
+
+
+
+\begin{problem}
+A certain passcode is made by choosing symbols from the digits in $0$ to $9$ and three shapes (square, triangle, circle, or star).  How many such passcodes can be made if you cannot choose the same number or same shape more than once, but you can choose the numbers and shapes in any order?
+\begin{prompt}
+	$\answer[given]{14*13*12*11*10}$
+\end{prompt}
+\end{problem}
+
+
+\begin{problem}
+In your own words, summarize the similarities and differences between the previous problems.
+
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+
+
+\begin{problem}
+In a magical dome, the probability that it will snow on any weekday is $10\%$, while the probability that it will snow on any weekend day is $60\%$.
+
+\begin{enumerate}
+	\item What is the probability that it will snow on both Monday and Tuesday? \begin{prompt} $\answer{0.1^2}$ \end{prompt}
+	\item What is the probability that it will snow on Monday and not snow on Tuesday? \begin{prompt} $\answer{0.1*0.9}$ \end{prompt}
+	\item What is the probability that it will snow on either Monday or Tuesday? \begin{prompt} $\answer{2*0.1*0.9}$ \end{prompt}
+	\item What is the probability that it will not snow for a whole week? \begin{prompt} $\answer{0.9^5*0.4^2}$ \end{prompt}
+	\item What is the probability that it will snow on one weekday and not snow on the weekend? \begin{prompt} $\answer{5*0.1*0.9^4*0.4^2}$ \end{prompt}
+	\item What is the probability that it will snow one day during a week? \begin{prompt} $\answer{5*0.1*0.9^4*0.4^2+2*0.9^5*0.6*0.4}$ \end{prompt}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}
+
+
+
