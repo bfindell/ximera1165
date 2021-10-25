@@ -31,10 +31,10 @@ Problems about ratios.
 A certain punch is made by mixing $4$ cups of fruit juice with $5$ cups of sparkling water.  Fill in the table below to find how many cups of fruit juice you will need to mix with $19$ cups of sparkling water to get a punch in the same recipe.
 
 \[
-\begin{array}{|c|c|c|} \hline
-4 & \answer[given]{\frac{4}{5}} & \answer[given]{\frac{76}{5}} \\ \hline
-5 & 1 & 19 \\ \hline \hline
-9 & \answer[given]{1.8} & \answer[given]{34.2} \\ \hline
+\begin{array}{|l|c|c|c|} \hline
+\textrm{fruit juice} & 4 & \answer[given]{\frac{4}{5}} & \answer[given]{\frac{76}{5}} \\ \hline
+\textrm{sparkling water} &5 & 1 & 19 \\ \hline \hline
+\textrm{punch} & 9 & \answer[given]{1.8} & \answer[given]{34.2} \\ \hline
 \end{array}
 \]
 \end{problem}
@@ -44,10 +44,10 @@ A certain punch is made by mixing $4$ cups of fruit juice with $5$ cups of spark
 A contractor usually mixes $8$ kilograms of sand with $11$ kilograms of rocks to make a parking area for equipment.  How many kilograms of sand should the contractor mix with $20$ kilograms of rocks in order to make the same mixture, but for a larger parking area?  Fill out the table below to answer this question.
 
 \[
-\begin{array}{|c|c|c|c|} \hline
-8 & 16 & 4 & 20 \\ \hline
-11 & \answer[given]{22} & \answer[given]{5.5} & \answer[given]{27.5} \\ \hline \hline
-19 & \answer[given]{38} & \answer[given]{9.5} & \answer[given]{47.5} \\ \hline
+\begin{array}{|l|c|c|c|c|} \hline
+\textrm{sand} & 8 & 16 & 4 & 20 \\ \hline
+\textrm{rocks} & 11 & \answer[given]{22} & \answer[given]{5.5} & \answer[given]{27.5} \\ \hline \hline
+\textrm{mixture} & 19 & \answer[given]{38} & \answer[given]{9.5} & \answer[given]{47.5} \\ \hline
 \end{array}
 \]
 \end{problem}
@@ -60,10 +60,10 @@ A contractor usually mixes $8$ kilograms of sand with $11$ kilograms of rocks to
 Jenny mixes $\frac{5}{7}$ of a cup of water with $\frac{1}{2}$ of a cup of insect repellent concentrate to spray around her yard.  How much water and insect repellent will Jenny need in order to make $3$ cups of this mixture?  Fill out the table below to answer this question.
 
 \[
-\begin{array}{|c|c|c|c|} \hline
-\frac{5}{7} & \answer[given]{10} & \answer[given]{\frac{10}{17}} & \answer[given]{\frac{30}{17}} \\ \hline
-\frac{1}{2} & \answer[given]{7} & \answer[given]{\frac{7}{17}} & \answer[given]{\frac{21}{17}} \\ \hline \hline
-  & 17 & 1 & 3 \\ \hline
+\begin{array}{|l|c|c|c|c|} \hline
+\textrm{water} & \frac{5}{7} & 10 & \answer[given]{\frac{10}{17}} & \answer[given]{\frac{30}{17}} \\ \hline
+\textrm{concentrate}& \frac{1}{2} & \answer[given]{7} & \answer[given]{\frac{7}{17}} & \answer[given]{\frac{21}{17}} \\ \hline \hline
+\textrm{mixture} & & \answer[given]{17} & 1 & 3 \\ \hline
 \end{array}
 \]
 
@@ -91,7 +91,7 @@ A bike is traveling at a constant rate of $4$ miles every $15$ minutes.  How far
 \node at (8, -1.25) {$C$};
 \node at (8, 1.25) {$F$};
 \node at (9, -1.25) {$D$};
-\node at (9, 1.25) {$16$};
+\node at (9, 1.25) {$12$};
 \foreach \x in {3, 6, 7, 8, 9} \draw (\x, -1.1)--(\x, -0.9); 
 \foreach \y in {3, 6, 7, 8, 9} \draw (\y, 1.1)--(\y, 0.9);
 
@@ -120,29 +120,29 @@ If $350$ yards of yarn weighs $210$ grams, how much does $530$ yards of the same
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
 \draw[thick] (0,-2)--(0,2);
-\draw[->, thick] (0,1)--(12,1);
-\draw[->, thick] (0, -1) -- (12, -1);
+\draw[->, thick] (0,1)--(13,1);
+\draw[->, thick] (0, -1) -- (13, -1);
 \node at (-1, 1) {Yards};
 \node at (-1, -1) {Grams};
-\node at (1, -1.25) {$D$};
-\node at (1, 1.25) {$5$};
-\node at (3, -1.25) {$210$};
-\node at (3, 1.25) {$A$};
-\node at (6, -1.25) {$E$};
-\node at (6, 1.25) {$B$};
-\node at (7, -1.25) {$F$};
-\node at (7, 1.25) {$530$};
-\node at (11, -1.25) {$420$};
-\node at (11, 1.25) {$C$};
-\foreach \x in {1, 3, 6, 7, 11} \draw (\x, -1.1)--(\x, -0.9); 
-\foreach \y in {1, 3, 6, 7, 11} \draw (\y, 1.1)--(\y, 0.9);
+\node at (0.6, -1.4) {$D$};
+\node at (0.6, 1.4) {$5$};
+\node at (6, -1.4) {$210$};
+\node at (6, 1.4) {$A$};
+\node at (9, -1.4) {$315$};
+\node at (9, 1.4) {$B$};
+\node at (9.6, -1.4) {$E$};
+\node at (9.6, 1.4) {$530$};
+\node at (12, -1.4) {$420$};
+\node at (12, 1.4) {$C$};
+\foreach \x in {0.6, 6, 9, 9.6, 12} \draw (\x, -1.1)--(\x, -0.9); 
+\foreach \y in {0.6, 6, 9, 9.6, 12} \draw (\y, 1.1)--(\y, 0.9);
 \end{tikzpicture}
 \end{center}
 
 \begin{prompt}	
 	We have $A = \answer[given]{350}$, $B = \answer[given]{525}$, and $C = \answer[given]{700}$.
 	
-	We also have $D = \answer[given]{3}$, $E = \answer[given]{315}$, and $F = \answer[given]{318}$.
+	We also have $D = \answer[given]{3}$, and $E = \answer[given]{318}$.
 	
 	Finally, $530$ yards of the yarn weighs $\answer[given]{318}$ grams.
 \end{prompt}
@@ -319,12 +319,16 @@ How fast does each snail travel one inch?  Select all correct answers below.
 	\choice{Snail $B$ travels $4$ inches in $1$ minute.}
 	\choice{Snail $C$ travels $0$ inches in $1$ minute.}
 	\choice{We do not know how far Snail $A$ travels in $1$ minute.}
-	\choice[correct]{We do not know how far Snail $B$ travels in $1$ minute.}
+	\choice{Snail $A$'s information is impossible.}
+	\choice[correct]{Snail $B$'s information is impossible.}
+	\choice{Snail $C$'s information is impossible.}
+	\choice{We do not know how far Snail $A$ travels in $1$ minute.}
+	\choice{We do not know how far Snail $B$ travels in $1$ minute.}
 	\choice[correct]{We do not know how far Snail $C$ travels in $1$ minute.}
 \end{selectAll}
 
 \begin{problem}
-We have different issues finding the distances traveled by the two snails in one minute.  Explain how the two problems are different.
+We have different issues finding the distances traveled by two of the snails in one minute.  Explain how the two problems are different.
 \begin{freeResponse}
 	\begin{hint}
 	With Snail $B$, the snail is not using any time to cover the distance.  In this case, we have an impossible situation: movement without using time.  With Snail $C$, however, as no time elapses, the snail does not move.  This could mean essentially anything - after 1 minute, the snail could have moved essentially any distance.  We do not have enough information to answer this question!
