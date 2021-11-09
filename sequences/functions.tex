@@ -28,18 +28,55 @@ Problems about functions and sequences.
 %Function given by table
 %Function given by complicated formula
 %
-
 \begin{problem}
 A \textbf{sequence} is a function with a domain that is a subset of the $\answer[format=string]{integers}$.  
 
+An \textbf{arithmetic sequence} has a constant $\answer[format=string]{difference}$ between consecutive terms. 
+
 An \textbf{arithmetic sequence} is a(n) $\answer[format=string]{linear}$ function. 
+
+An \textbf{geometric sequence} has a constant $\answer[format=string]{ratio}$ between consecutive terms. 
 
 A \textbf{geometric sequence} is a(n) $\answer[format=string]{exponential}$ function. 
 \end{problem}
 
-\begin{problem}
-Suppose 
 
+
+\begin{problem}
+Consider a sequence that begins $9, 12$.    
+\begin{enumerate}
+\item Continue the sequence so that it is an \textbf{arithmetic sequence}:
+\[
+9, 12, \answer{15}, \answer{18}, \answer{21}, \answer{24}, \dots
+\]
+\item Assuming that $f(1)=9$, write a recursive formula for the sequence:
+\[
+f(n+1)=\answer{f(n)+3}\textrm{, for }n\ge\answer{1}.
+\]
+\item Assuming that $f(1)=9$, write an explicit formula for the sequence: 
+\[
+f(n)=\answer{3n+6}\textrm{, for }n\ge\answer{1}
+\]
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Consider a sequence that begins $9, 12$.    
+\begin{enumerate}
+\item Continue the sequence so that it is an \textbf{geometric sequence}:
+\[
+9, 12, \answer{16}, \answer{9*(4/3)^3}, \answer{9*(4/3)^4}, \answer{9*(4/3)^5}, \dots
+\]
+\item Assuming that $f(1)=9$, write a recursive formula for the sequence:
+\[
+f(n+1)=\answer{f(n)*4/3}\textrm{, for }n\ge\answer{1}.
+\]
+\item Assuming that $f(1)=9$, write an explicit formula for the sequence: 
+\[
+f(n)=\answer{9*(4/3)^(n-1)}\textrm{, for }n\ge\answer{1}
+\]
+\end{enumerate}
 \end{problem}
 
 
@@ -64,153 +101,96 @@ If we use function notation to describe the sequence, then the recursive rule ma
 
 And given $f(1)=3$, it follows that $f(2)=\answer{10}$, $f(3)=\answer{5}$, and so on.  
 
-Claim: No matter the initial (positive integer) value, the sequence will always reach 1.  
+\begin{problem}
+Is there an explicit formula for this function, $f$?  
+\begin{multipleChoice}
+\choice{Yes, it is linear.}
+\choice{Yes, it is quadratic.}
+\choice{Yes, it is exponential.}
+\choice{Yes, it is trigonometric.}
+\choice[correct]{Probably not.}
+\end{multipleChoice}
+\end{problem}
 
-This claim is often called the Collatz Conjecture, in honor of Lothar Collatz, who introduced the idea in 1937.  As of 2020, the conjecture has been checked by computer for all starting values up to $2^{68} \approx 2.95\times 10^{20}$. The statement is still a conjecture (rather than a theorem) because no one has been able to prove that it holds for \textbf{all} possible initial values.  For more information, see \link[Wikipedia]{https://en.wikipedia.org/wiki/Collatz_conjecture}. 
+\begin{feedback}
+\begin{quote}
+\textbf{Claim:} No matter the initial (positive integer) value, the sequence will always reach 1.  
+\end{quote}
+This claim is often called the \textbf{Collatz Conjecture}, in honor of Lothar Collatz, who introduced the idea in 1937.  As of 2020, the conjecture has been checked by computer for all starting values up to $2^{68} \approx 2.95\times 10^{20}$. The statement is still a conjecture (rather than a theorem) because no one has been able to prove that it holds for \textbf{all} possible initial values.  For more information, see \link[Wikipedia]{https://en.wikipedia.org/wiki/Collatz_conjecture}. 
+\end{feedback}
 
 \end{problem}
 
 \end{problem}
 
+
+
+%A Actual (read from the graph or table or computed from a formula)
+%E Estimate (estimated from the graph or table or formula)
+%Interpolate vs. extrapolate 
+%
+%M Model
+%
+%NA not available (we don't have actual data, and our data is insufficient for a good estimate), 
+%DNE does not exist 
+%
 
 
 \begin{problem}
-
-
-A Actual (read from the graph or table or computed from a formula)
-E Estimate (estimated from the graph or table or formula)
-
-Interpolate vs. extrapolate 
-
-M Model
-
-NA not available (we don't have actual data, and our data is insufficient for a good estimate), 
-DNE does not exist 
-
-
-
-Columbus, Ohio State University Airport (KOSU)
-
-Lat: $40.08^\circ$N, Lon: $83.08^\circ$W, Elev: $902$ ft.
-
-\begin{tabular}{|c|c|c|}
-\hline
-Date  &   \multicolumn{1}{p{1.5cm}|}{\centering Time \\ (EDT)}  
-      &   \multicolumn{1}{p{1.5cm}|}{\centering Temp. \\ ($^\circ $F)} \\ \hline
-%10/29/21   &  10:53  &  58 \\
-%             &  11:53  &  57 \\
-%             &  12:53  &  58 \\
-%             &  13:53  &  60 \\
-%             &  14:53  &  60 \\
-%             &  15:53  &  59 \\
-%             &  16:53  &  58 \\
-%             &  17:53  &  57 \\
-%             &  18:53  &  57 \\
-%             &  19:53  &  57 \\
-%             &  20:53  &  57 \\
-%             &  21:53  &  57 \\
-%             &  22:53  &  56 \\
-%             &  23:53  &  56 \\ \hline
-%10/30/21   &  0:53  &  56 \\
-%             &  1:53  &  56 \\
-%             &  2:53  &  55 \\
-%             &  3:53  &  55 \\
-%             &  4:53  &  55 \\
-%             &  5:53  &  55 \\
-%             &  6:53  &  55 \\
-%             &  7:53  &  55 \\
-%             &  8:53  &  55 \\
-%             &  9:53  &  55 \\
-%             &  10:53  &  56 \\
-%             &  11:53  &  58 \\
-%             &  12:53  &  60 \\
-%             &  13:53  &  59 \\
-%             &  14:53  &  59 \\
-%             &  15:53  &  59 \\
-%             &  16:53  &  59 \\
-%             &  17:53  &  56 \\
-%             &  18:53  &  56 \\
-%             &  19:53  &  56 \\
-%             &  20:53  &  55 \\
-%             &  21:53  &  54 \\
-%             &  22:53  &  53 \\
-%             &  23:53  &  53 \\ \hline
-10/31/21   &  0:53  &  53 \\
-             &  1:53  &  53 \\
-             &  2:53  &  53 \\
-             &  3:53  &  52 \\
-             &  4:53  &  52 \\
-             &  5:53  &  52 \\
-             &  6:53  &  52 \\
-             &  7:53  &  52 \\
-             &  8:53  &  53 \\
-             &  9:53  &  53 \\
-             &  10:53  &  55 \\
-             &  11:53  &  55 \\
-             &  12:53  &  56 \\
-             &  13:53  &  58 \\
-             &  14:53  &  59 \\
-             &  15:53  &  59 \\
-             &  16:53  &  61 \\
-%             &  17:53  &  60 \\
-%             &  18:53  &  59 \\
-%             &  19:53  &  58 \\
-%             &  20:53  &  56 \\
-%             &  21:53  &  55 \\
-%             &  22:53  &  53 \\
-%             &  23:53  &  52 \\
-%11/01/21   &  0:53  &  51 \\
-%             &  1:53  &  47 \\
-%             &  2:53  &  44 \\
-%             &  3:53  &  43 \\
-%             &  4:53  &  42 \\
-%             &  5:53  &  40 \\
-%             &  6:53  &  39 \\
-%             &  7:53  &  38 \\
-%             &  8:53  &  40 \\
-%             &  9:53  &  46 \\
-\hline
-\end{tabular}\qquad
-\begin{tabular}{|c|c|c|}
-\hline
-Date  &   \multicolumn{1}{p{1.5cm}|}{\centering Time \\ (EDT)}  
-      &   \multicolumn{1}{p{1.5cm}|}{\centering Temp. \\ ($^\circ $F)} \\ \hline
-10/31/21     &  17:53  &  60 \\
-             &  18:53  &  59 \\
-             &  19:53  &  58 \\
-             &  20:53  &  56 \\
-             &  21:53  &  55 \\
-             &  22:53  &  53 \\
-             &  23:53  &  52 \\
-11/01/21   &  0:53  &  51 \\
-             &  1:53  &  47 \\
-             &  2:53  &  44 \\
-             &  3:53  &  43 \\
-             &  4:53  &  42 \\
-             &  5:53  &  40 \\
-             &  6:53  &  39 \\
-             &  7:53  &  38 \\
-             &  8:53  &  40 \\
-             &  9:53  &  46 \\
-\hline
-\end{tabular}
-
-
-Let $F(t)$ denote the temperature (in degrees Fahrenheit) $t$ hours after the beginning of November.  
-
-Note that the hourly readings all occur at $53$ minutes after the hour.  For ease of entry, we are going to take 53 minutes as 0.9 hours (though, in fact, 0.9 hours is exactly $\answer{54}$ minutes).  This minor simplification, allows us to write, for example, $F(0.9) = \answer{51}$, $F(1.9)=\answer{47}$, and $F(8.9)=\answer{40}$.  
-
-From real-world data, it is often reasonable to estimate values that are not directly available.  In particular, to \textbf{interpolate} is to estimate between available data values, and to \textbf{extrapolate} is to estimate beyond available values.  
-\end{problem}
-
-
-\begin{problem}
-The following table shows a temperature forecast for the OSU Airport.  
+The following table shows historical data collected by the National Weather Service.  
 \begin{image}
-\includegraphics[scale=0.5]{columbusTemp.png}
+\includegraphics[scale=0.5]{columbusTemp1106.png}
 \end{image}
-Let $F(t)$ denote the predicted temperature (in degrees Fahrenheit) $t$ hours after the beginning of November (i.e., one minute before 12:01 am, 11/01/2021).  
+Let $F(t)$ denote the actual or predicted temperature (in degrees Fahrenheit) $t$ hours after the start (at midnight) of November 6, 2021.  
+
+\begin{enumerate}
+\item Note that the hourly readings all occur at $53$ minutes after the hour.  For ease of entry, we are going to take 53 minutes as 0.9 hours (though, in fact, 0.9 hours is exactly $\answer{54}$ minutes).  This minor simplification, allows us to write, for example, 
+\[
+F(0.9) = \answer{36}\text{ and }F(12.9)=\answer{52}.  
+\]
+\item Negative values of time occur on November $\answer{5}$ or earlier, counting hours backwards from midnight.  For example, 
+\[
+F(-1.1) = \answer{35}\text{ and }F(-7.1)=\answer{50}.  
+\]
+\item From real-world data, it is often reasonable to estimate values that are not directly available.  In particular, to \textbf{interpolate} is to estimate between available data values, and to \textbf{extrapolate} is to estimate beyond available values. From this data, for example, we can estimate the following:  
+\[
+F(10.2)=\answer{32}, F(10.6)=\answer{35}, F(-4.6)=\answer{44}, F(14.5)=\answer{54}\text{, and }F(17)=\answer{56}.  
+\]
+\end{enumerate}
+
+\begin{problem}
+From this table, is it reasonable to estimate $F(30)$? 
+\begin{multipleChoice}
+\choice{Yes, use the formula.}
+\choice{Yes, just continue the trend.}
+\choice[correct]{Probably not.}
+\end{multipleChoice}
+\begin{feedback}[correct]
+With this small data set, it is not reasonable to extrapolate more than a few hours beyond the available data.  Meteorologists (weather forecasters) use enormous data sets about nearby and historical weather to develop sophisticated models that are usually pretty accurate a few days into the future and somewhat accurate up to ten days.
+\end{feedback}
+
+\begin{problem}
+Is there an explicit formula for this function, $F$?  
+\begin{multipleChoice}
+\choice{Yes, it is linear.}
+\choice{Yes, it is quadratic.}
+\choice{Yes, it is exponential.}
+\choice{Yes, it is trigonometric.}
+\choice[correct]{Probably not.}
+\end{multipleChoice}
 \end{problem}
+
+\end{problem}
+\end{problem}
+
+
+
+%
+%Based upon much more sophisticated modeling, the following table shows a temperature forecast for the same location.  
+%\begin{image}
+%\includegraphics[scale=0.5]{columbusTemp1106F.png}
+%\end{image}
+%
 
 \end{document}
 
