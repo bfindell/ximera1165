@@ -1,0 +1,142 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Series}
+\author{Bart Snapp and Brad Findell and Jenny Sheldon}
+\begin{document}
+\begin{abstract}
+Problems about series.
+\end{abstract}
+\maketitle
+
+
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
+
+\begin{problem}
+A series is the $\answer[format=string]{sum}$ of consecutive terms from a(n) $\answer[format=string]{sequence}$.  
+
+An arithmetic series is the $\answer[format=string]{sum}$ of consecutive terms from a(n) $\answer[format=string]{arithmetic sequence}$.  
+
+A geometric series is the $\answer[format=string]{sum}$ of consecutive terms from a(n) $\answer[format=string]{geometric sequence}$.  
+\end{problem}
+
+\begin{problem}
+Consider the series: 
+\[
+1+3+5+7+\dots+99
+\]
+First compute the sequence of partial sums: 
+\[
+\begin{array}{c|c} \hline
+\# of terms & \text{Value} \\ \hline
+1 & \answer{1} \\
+2 & \answer{4} \\
+3 & \answer{9}\\
+4 & \answer{16}\\
+5 & \answer{25}\\
+6 & \answer{36}\\
+\end{array}
+\]
+\begin{problem}
+Make a conjecture: The sum of the first $n$ terms of this series is $\answer{n^2}$. 
+
+In the series
+\[
+1+3+5+7+\dots+99
+\]
+there are $\answer{50}$ terms, so the sum is $\answer{50^2}$.  
+
+%More generally, iff $1$ is the first term, then the $n^textrm{th}$ term is $\answer{2n-1}$,  
+\begin{problem}[correct]
+Often the pattern is harder to see.  Here is picture showing why the sum of the first $n$ odd numbers works out so nicely: 
+\begin{image}
+\includegraphics[scale=0.5]{sumOdds.png}
+\end{image}
+
+This compelling example illustrates an important result:  The sequence of partial sums of a(n) $\answer[format=string]{arithmetic}$ series is a $\answer[format=string]{quadratic}$ function.  
+
+Usually, the pattern requires some algebraic reasoning.  
+\end{problem}
+\end{problem}
+\end{problem}
+
+
+\begin{problem}
+Consider the series: 
+\[
+5+8+11+14+\dots+101
+\]
+First compute the sequence of partial sums: 
+\[
+\begin{array}{c|c} \hline
+\# of terms & \text{Value} \\ \hline
+1 & \answer{5} \\
+2 & \answer{5+8} \\
+3 & \answer{5+8+11}\\
+4 & \answer{5+8+11+14}\\
+5 & \answer{5+8+11+14+17}\\
+6 & \answer{5+8+11+14+17+20}\\
+7 & \answer{5+8+11+14+17+20+23}\\
+\end{array}
+\]
+
+\begin{problem}
+One way to approach this problem is to call the series $S$.  Then write out the series forward and backward, with the terms aligned as follows:  
+\[
+\begin{array}{c@{ = }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c}
+S & 5 & 8 & 11 & \cdots & 95 & 98 & 101 \\
+S & 101 & 98 & 95 & \cdots & 11 & 8 & 5 
+\end{array}
+\]
+The terms in each column sum to $\answer{106}$, and there are $\answer{33}$ terms, so on the right, these equations sum to $\answer{106\cdot 33}$.  
+
+But on the left, the equations sum to $\answer{2S}$.  So the sum of the original series is 
+$\answer{106\cdot 33/2}$. 
+
+\begin{problem}
+Let's generalize this approach to find the sum of the first $n$ terms of the arithmetic series that begins $5+8+11+\dots$.  
+
+First, we need a formula for the $n^{th}$ term in the sequence $5, 8, 11, \dots$.  (Be careful:  It is easy to be ``off by one.'')
+
+If we call 5 the \textbf{first} term, then the $n^{th}$ term is $\answer{5+3(n-1)}$.  
+\begin{feedback}
+One way of reasoning:  Begin with $5$ and add $(n-1)$ copies of the common difference, which is $3$.  
+\end{feedback}
+
+\begin{problem}
+For ease of algebra, let's write $5+3(n-1)$ as $3n+2$.  Then 
+\[
+\begin{array}{c@{ = }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c}
+S & 5 & 8 & 11 & \cdots & 3n-4 & 3n-1 & 3n+2 \\
+S & 3n+2 & 3n-1 & 3n-4 & \cdots & 11 & 8 & 5 
+\end{array}
+\]
+The terms in each column sum to $\answer{3n+7}$, and there are $\answer{n}$ terms, so on the right, these equations sum to $\answer{n(3n+7)}$.  
+
+But on the left, the equations sum to $\answer{2S}$.  So the sum of the original series is 
+$\answer{n(3n+7)/2}$, which is indeed a $\answer[format=string]{quadratic}$ function of $n$.  
+\end{problem}
+
+\end{problem}
+
+
+\end{problem}
+
+
+\end{problem}
+
+
+\end{document}
+
+
+
