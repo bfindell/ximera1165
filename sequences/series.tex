@@ -93,9 +93,9 @@ First compute the sequence of partial sums:
 \begin{problem}
 One way to approach this problem is to call the series $S$.  Then write out the series forward and backward, with the terms aligned as follows:  
 \[
-\begin{array}{c@{ = }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c}
-S & 5 & 8 & 11 & \cdots & 95 & 98 & 101 \\
-S & 101 & 98 & 95 & \cdots & 11 & 8 & 5 
+\begin{array}{ccccccccccccccc}
+S & = &     5  & + & 8      & + &  11    & + & \cdots & + & 95 & + & 98 & + & 101 \\
+S & = & 101 & + & 98 & + & 95 & + & \cdots & + & 11     & + &    8   & + & 5
 \end{array}
 \]
 The terms in each column sum to $\answer{106}$, and there are $\answer{33}$ terms, so on the right, these equations sum to $\answer{106\cdot 33}$.  
@@ -116,9 +116,9 @@ One way of reasoning:  Begin with $5$ and add $(n-1)$ copies of the common diffe
 \begin{problem}
 For ease of algebra, let's write $5+3(n-1)$ as $3n+2$.  Then 
 \[
-\begin{array}{c@{ = }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c@{ + }c}
-S & 5 & 8 & 11 & \cdots & (3n-4) & (3n-1) & (3n+2) \\
-S & (3n+2) & (3n-1) & (3n-4) & \cdots & 11 & 8 & 5 
+\begin{array}{ccccccccccccccc}
+S & = &     5  & + & 8      & + &  11    & + & \cdots & + & (3n-4) & + & (3n-1) & + & (3n+2) \\
+S & = & (3n+2) & + & (3n-1) & + & (3n-4) & + & \cdots & + & 11     & + &    8   & + & 5
 \end{array}
 \]
 The terms in each column sum to $\answer{3n+7}$, and there are $\answer{n}$ terms, so on the right, these equations sum to $\answer{n(3n+7)}$.  
