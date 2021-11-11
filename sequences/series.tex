@@ -56,16 +56,26 @@ In the series
 \]
 there are $\answer{50}$ terms, so the sum is $\answer{50^2}$.  
 
-%More generally, iff $1$ is the first term, then the $n^textrm{th}$ term is $\answer{2n-1}$,  
-\begin{problem}[correct]
-Often the pattern is harder to see.  Here is picture showing why the sum of the first $n$ odd numbers works out so nicely: 
+\begin{problem}
+Noticing patterns is called 
+\wordChoice{\choice[correct]{inductive} \choice{productive} \choice{deductive} \choice{reductive}}
+reasoning, which is very important in mathematical problem solving. 
+
+But in mathematics, we usually aim to know \textbf{why} patterns works, which requires  
+\wordChoice{\choice{inductive} \choice{productive} \choice[correct]{deductive} \choice{reductive}} reasoning.  
+
+Here is picture that can help explain why the sum of the first $n$ odd numbers works out so nicely: 
 \begin{image}
 \includegraphics[scale=0.5]{sumOdds.png}
 \end{image}
 
-This compelling example illustrates an important result:  The sequence of partial sums of a(n) $\answer[format=string]{arithmetic}$ series is a $\answer[format=string]{quadratic}$ function.  
+The red lines organize the dots into groups. Moving from the top left toward the bottom right, the number of dots are $\answer{1},\answer{3},\answer{5}$, and so on.  More generally, if $1$ is the first group, then the $n^textrm{th}$ group has $\answer{2n-1}$ dots, which is the $n^textrm{th}$ odd number.  
 
-Usually, the pattern requires some algebraic reasoning.  
+Furthermore, through the $n^textrm{th}$ odd number, the dots are organized so that they form a square of side length $\answer{n}$, for a total of $\answer{n^2}$ dots.  
+
+This compelling example illustrates an important result:  The sequence of partial sums of a(n) $\answer[format=string]{arithmetic}$ series is a $\answer[format=string]{quadratic}$ function of the number of terms summed.  
+
+The following examples show that patterns are sometimes much harder to see.  
 \end{problem}
 \end{problem}
 \end{problem}
@@ -91,7 +101,9 @@ First compute the sequence of partial sums:
 \]
 
 \begin{problem}
-One way to approach this problem is to call the series $S$.  Then write out the series forward and backward, with the terms aligned as follows:  
+Even suspecting that this sequence is a quadratic function, the pattern is hard to see.  
+
+For arithmetic series, an important and useful technique is as follows. Call the series $S$, and then write out the series forward and backward, with the terms aligned as shown:  
 \[
 \begin{array}{ccccccccccccccc}
 S & = &     5  & + & 8      & + &  11    & + & \cdots & + & 95 & + & 98 & + & 101 \\
@@ -114,7 +126,7 @@ One way of reasoning:  Begin with $5$ and add $(n-1)$ copies of the common diffe
 \end{feedback}
 
 \begin{problem}
-For ease of algebra, let's write $5+3(n-1)$ as $3n+2$.  Then 
+For ease of algebra, let's write $5+3(n-1)$ as $3n+2$.  Then proceed as above:  
 \[
 \begin{array}{ccccccccccccccc}
 S & = &     5  & + & 8      & + &  11    & + & \cdots & + & (3n-4) & + & (3n-1) & + & (3n+2) \\
