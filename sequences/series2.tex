@@ -31,6 +31,49 @@ A geometric series is the $\answer[format=string]{sum}$ of consecutive terms fro
 \end{problem}
 
 
+\begin{problem}
+Consider the geometric series: 
+\[
+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\dots+\frac{1}{2048}
+\]
+First compute the sequence of partial sums: 
+\[
+\begin{array}{c|c} \hline
+\text{No. of terms} & \text{Value} \\ \hline
+1 & \answer{\frac{1}{2}} \\
+2 & \answer{\frac{3}{4}} \\
+3 & \answer{\frac{7}{8}}\\
+4 & \answer{\frac{15}{16}}\\
+5 & \answer{\frac{31}{32}}\\
+6 & \answer{\frac{63}{64}}\\
+\end{array}
+\]
+\begin{problem}
+Make a conjecture: The sum of the first $n$ terms of this series is $\answer{1-\frac{1}{2^n}}$. 
+
+In the series
+\[
+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\dots+\frac{1}{2048}
+\]
+there are $\answer{11}$ terms, so the sum is $\answer{1-\frac{1}{2^{11}}}$.  
+
+\begin{problem}
+
+Here is picture that can help explain why this particular series works out so nicely: 
+\begin{image}
+\includegraphics{pbpsqgeo.png}
+\end{image}
+
+Begin with a unit square, and then shade an area equal to each term.  At each step in the process, the area remaining unshaded is exactly equal to the area of the region last shaded.  For example, after shading $\frac{1}{2}$ and then $\frac{1}{4}$, $\frac{1}{2}$ remains unshaded.  
+
+Furthermore, it appears that as more and more terms are added, the sum should get closer and closer to $\answer{1}$.  
+
+The following examples provide a general approach for geometric series.  
+\end{problem}
+\end{problem}
+\end{problem}
+
+
 
 \end{document}
 
