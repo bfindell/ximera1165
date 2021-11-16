@@ -65,14 +65,14 @@ Powers of 2
 \item $2^7 = \answer{128}$
 \item $2^8 = \answer{256}$
 \item $2^9 = \answer{512}$
-\item $2^10 = \answer{1024}$
+\item $2^{10} = \answer{1024}$
 \end{enumerate}
 \end{problem}
 
 \begin{problem}
 Because computers are designed around base $\answer[format=string]{two}$, the powers of two turn out to be very important.  In particular, because $2^{10}=\answer{1024}$, which is approximately $1000$, computer science borrowed the base-ten prefixes from the metric system.  
 
-Computer memory and storage is typically measured in bytes, where 1 byte can store one ``character,'' such as a letter, punctuation mark, or space in this sentence.  With the metric prefixes, we have, for example, 
+Computer memory and storage is typically measured in bytes, where 1 byte can store one ``character,'' such as a letter, punctuation mark, or space in this sentence.  With the metric prefixes, we approximate powers of 2 with powers of ten.  For example: 
 \begin{enumerate}
 \item $1$ Kilobyte (1 KB) $=  2^{10}\textrm{ bytes }\approx \answer{10^3}$ bytes = one \wordChoice{\choice[correct]{thousand} \choice{million} \choice{billion} \choice{trillion}} bytes.
 \item $1$ Megabyte (1 MB) $=  \answer{2^{20}} \textrm{ bytes } \approx \answer{10^6}$ bytes = one \wordChoice{\choice{thousand} \choice[correct]{million} \choice{billion} \choice{trillion}} bytes.
@@ -80,21 +80,24 @@ Computer memory and storage is typically measured in bytes, where 1 byte can sto
 \item $1$ Terabyte (1 TB) $=  \answer{2^{40}} \textrm{ bytes } \approx \answer{10^{12}}$ bytes = one \wordChoice{\choice{thousand} \choice{million} \choice{billion} \choice[correct]{trillion}} bytes.
 \end{enumerate}
 
-
-And 1 byte is composed of 8 bits, each of which is a base-two digit, either 0 or 1.  Internet speeds are usually given in Mb/sec, which means ``Megabits per second.'' So if your Internet speed is $100$ Mb/sec, 
+And 1 byte is composed of 8 bits, each of which is a base-two digit, either 0 or 1.  Today, internet speeds are usually given in Mb/sec, which means ``Megabits per second.'' So if your Internet speed is $100$ Mb/sec, 
 that means $\answer{100\cdot10^6}$ bits per second.  (Type your answer without commas.)
 
 Computer processor speeds are typically given in GHz, where 1 Hz = 1 cycle per second.  Many processors operations require 1 cycle to complete, so we imagine that a 2.4 GHz processor completes $\answer{2.4\cdot10^9}$ operations per second.  
 
-Many modern processors have several `cores' which can perform operations at the same time.  But never mind.  
+Most modern processors have several `cores' which can perform operations at the same time.  But never mind.  
 
 In 1984, a fully-equipped IBM PC/XT had $640$ KB of memory, a $10$ MB hard drive, and processor running at $4.77$ MHz.  In those years, it was possible to connect others through an ``online service provider'' (the World Wide Web did not exist), with a modem operating at 300 bits per second, tying up the phone line, and at a cost of $\$6$---or even as much as $\$30$ per hour.  (A leading online service provider was Compuserve, based in Columbus, Ohio.)  
 
+In contrast, a typical 2021 laptop computer might have a 2.4 GHz processor, 16 GB of memory, a 512 GB (solid state) ``hard'' drive, and an internet connection operating at $100$ Mb/sec.  
+
+By what factors do the capacities of a 2021 computer improve on the 1984 version?  
+
 \begin{enumerate}
-\item Processor speed: $\answer{2.4\cdot10^9/4.77\cdot10^6}$
-\item Disk storage: $\answer{512\cdot10^9/10\cdot10^6}$
-\item Memory: $\answer{16\cdot10^9/640*10^3}$
-\item Online speed: $\answer[tolerance=5000]{100\cdot10^6/300}$. 
+\item Processor speed: $\answer[tolerance=20]{2.4\cdot10^9/(4.77\cdot10^6)}$.  % 503.144654088050314
+\item Disk storage: $\answer[tolerance=2000]{512\cdot10^9/(10\cdot10^6)}$.     % 51200.
+\item Memory: $\answer[tolerance=1000]{16\cdot10^9/(640\cdot10^3)}$.           % 25000.
+\item Online speed: $\answer[tolerance=17000]{100\cdot10^6/300}$.              % 333333.333333
 \end{enumerate}
 \end{problem}
 
