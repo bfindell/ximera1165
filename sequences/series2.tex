@@ -64,7 +64,8 @@ Here is picture that can help explain why this particular series works out so ni
 \includegraphics{pbpsqgeo.png}
 \end{image}
 
-Begin with a unit square, and then shade an area equal to each term.  At each step in the process, the area remaining unshaded is exactly equal to the area of the region last shaded.  For example, after shading $\frac{1}{2}$ and then $\frac{1}{4}$, $\frac{1}{2}$ remains unshaded.  
+Begin with a unit square, and then shade an area equal to each term.  At each step in the process, the area remaining unshaded is exactly equal to the area of the region last shaded.  For example, after shading $\frac{1}{2}$ and then $\frac{1}{4}$, 
+$\answer{\frac{1}{4}}$ remains unshaded.  
 
 Furthermore, it appears that as more and more terms are added, the sum should get closer and closer 
 to $\answer{1}$.  
@@ -72,10 +73,41 @@ to $\answer{1}$.
 Here is GeoGebra sketch that allows you to explore similar series:  
 %https://www.geogebra.org/m/tbheatqn
 \begin{center}
-\geogebra{tbheatqn}{995}{370}
+\geogebra{tbheatqn}{720}{600}
 \end{center}
 
-The following examples provide a general approach for geometric series.  
+The following problems demonstrate a general technique for geometric series.  
+
+\begin{problem}
+First, let 
+\[
+S=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\dots+\frac{1}{2048}
+\]
+Multiply this equation by the common ratio $\answer{\frac{1}{2}}$ and place the two equations above/below one another so that identical terms align.  
+
+\[
+\begin{array}{ccccccccccccc}
+                     S &=& \frac{1}{2} &+& \frac{1}{4} &+& \frac{1}{8} &+& \dots &+& \frac{1}{2048} \\ \\
+\answer{\frac{S}{2}} &=&                & & \frac{1}{4} &+& \frac{1}{8} &+& \dots &+& \frac{1}{2048} 
+         &+& \answer{\frac{1}{4096}}
+\end{array}
+\]
+\begin{problem}
+Then we $\answer[format=string]{subtract}$ the two equations so that most of the terms on the right vanish.  The result is a simpler equation: 
+\[
+S - \answer{\frac{S}{2}} = \frac{1}{2} - \answer{\frac{1}{4096}},
+\]
+which we can solve for $S$.  
+\[
+S = \frac{\frac{1}{2} - \answer{\frac{1}{4096}}}{1-\answer{\frac{1}{2}}},
+\]
+which simplifies to $S=\answer{1-\frac{1}{2^{11}}}$ as before.  
+\begin{hint}
+Remember to factor out the $S$ on the left before dividing.  
+\end{hint}
+\end{problem}
+\end{problem}
+
 \end{problem}
 \end{problem}
 \end{problem}
