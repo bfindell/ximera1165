@@ -45,19 +45,19 @@ Cubes:
 \begin{problem}
 Factorials: $4!$ means $4\cdot3\cdot2\cdot1$.  
 \begin{enumerate}
+%\item $0!= \answer{1}$
+\item $1!= \answer{1}$
+\item $2!= \answer{2}$
+\item $3!= \answer{6}$
 \item $4!= \answer{24}$
 \item $5!= \answer{120}$
 \item $6!= \answer{720}$
 \item $7!= \answer{5040}$
-\item $3!= \answer{6}$
-\item $2!= \answer{2}$
-\item $1!= \answer{1}$
-\item $0!= \answer{1}$
 \end{enumerate}
 \end{problem}
 
 \begin{problem}
-Powers of 2
+Powers of 2:  
 \begin{enumerate}
 \item $2^4 = \answer{16}$
 \item $2^5 = \answer{32}$
@@ -70,9 +70,10 @@ Powers of 2
 \end{problem}
 
 \begin{problem}
-Because computers are designed around base $\answer[format=string]{two}$, the powers of two turn out to be very important.  In particular, because $2^{10}=\answer{1024}$, which is approximately $1000$, computer science borrowed the base-ten prefixes from the metric system.  
+Computers and digital electronics are built from transistors, which can function as electronic \textbf{switches}.  Because a switch can be either \textbf{off} or \textbf{on}, switch positions can interpreted as the digits $0$ and $1$, respectively, 
+in a base $\answer[format=string]{two}$ numeration system.  This is why the powers of two turn out to be very important in computer science.  In particular, because $2^{10}=\answer{1024}$, which is approximately $1000$, computer science borrowed some base-ten prefixes from the metric system.  
 
-Computer memory and storage is typically measured in bytes, where 1 byte can store one ``character,'' such as a letter, punctuation mark, or space in this sentence.  With the metric prefixes, we approximate powers of 2 with powers of ten.  For example: 
+Computer memory and storage is typically measured in bytes, where one byte can store one ``character,'' such as a letter, punctuation mark, or space in this sentence.  With the metric prefixes, we approximate powers of two with powers of ten.  For example: 
 \begin{enumerate}
 \item $1$ Kilobyte (1 KB) $=  2^{10}\textrm{ bytes }\approx \answer{10^3}$ bytes = one \wordChoice{\choice[correct]{thousand} \choice{million} \choice{billion} \choice{trillion}} bytes.
 \item $1$ Megabyte (1 MB) $=  \answer{2^{20}} \textrm{ bytes } \approx \answer{10^6}$ bytes = one \wordChoice{\choice{thousand} \choice[correct]{million} \choice{billion} \choice{trillion}} bytes.
@@ -80,18 +81,19 @@ Computer memory and storage is typically measured in bytes, where 1 byte can sto
 \item $1$ Terabyte (1 TB) $=  \answer{2^{40}} \textrm{ bytes } \approx \answer{10^{12}}$ bytes = one \wordChoice{\choice{thousand} \choice{million} \choice{billion} \choice[correct]{trillion}} bytes.
 \end{enumerate}
 
-And 1 byte is composed of 8 bits, each of which is a base-two digit, either 0 or 1.  Today, internet speeds are usually given in Mb/sec, which means ``Megabits per second.'' So if your Internet speed is $100$ Mb/sec, 
-that means $\answer{100\cdot10^6}$ bits per second.  (Type your answer without commas.)
+In computer storage, 1 byte is composed of 8 bits, each of which is a base-two digit, either 0 or 1.  Today, internet speeds are usually given in Mb/sec, which means ``Megabits per second.'' So if your Internet speed is $100$ Mb/sec, 
+that means about $\answer{100\cdot10^6}$ bits per second.  (Type your answer without commas.)
 
-Computer processor speeds are typically given in GHz, where 1 Hz = 1 cycle per second.  Many processors operations require 1 cycle to complete, so we imagine that a 2.4 GHz processor completes $\answer{2.4\cdot10^9}$ operations per second.  
+Computer processor speeds are typically given in GHz, where 1 Hz = 1 cycle per second.  Many processor operations require 1 cycle to complete, so we can imagine that a 2.4 GHz processor completes about $\answer{2.4\cdot10^9}$ operations per second.  (Most modern processors have several `cores' which can perform operations at the same time.  But never mind.)
+\end{problem}
 
-Most modern processors have several `cores' which can perform operations at the same time.  But never mind.  
-
-In 1984, a fully-equipped IBM PC/XT had $640$ KB of memory, a $10$ MB hard drive, and processor running at $4.77$ MHz.  In those years, it was possible to connect others through an ``online service provider'' (the World Wide Web did not exist), with a modem operating at 300 bits per second, tying up the phone line, and at a cost of $\$6$---or even as much as $\$30$ per hour.  (A leading online service provider was Compuserve, based in Columbus, Ohio.)  
+The following comparisons benefit from scientific notation.  
+\begin{problem}
+In 1984, a fully-equipped IBM PC/XT had $640$ KB of memory, a $10$ MB hard drive, and processor running at $4.77$ MHz.  In those years, it was possible to connect to other computer users through an ``online service provider'' (the World Wide Web did not exist), with a modem operating at 300 bits per second, tying up the phone line, and at a cost of $\$10$---or even as much as $\$30$ per hour.  (A leading online service provider was Compuserve, based in Columbus, Ohio.)  
 
 In contrast, a typical 2021 laptop computer might have a 2.4 GHz processor, 16 GB of memory, a 512 GB (solid state) ``hard'' drive, and an internet connection operating at $100$ Mb/sec.  
 
-By what factors do the capacities of a 2021 computer improve on the 1984 version?  
+By what factors do the capacities of a 2021 computer improve upon the 1984 version?  
 
 \begin{enumerate}
 \item Processor speed: $\answer[tolerance=20]{2.4\cdot10^9/(4.77\cdot10^6)}$.  % 503.144654088050314
