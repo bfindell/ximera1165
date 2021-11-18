@@ -66,13 +66,90 @@ Here is picture that can help explain why this particular series works out so ni
 
 Begin with a unit square, and then shade an area equal to each term.  At each step in the process, the area remaining unshaded is exactly equal to the area of the region last shaded.  For example, after shading $\frac{1}{2}$ and then $\frac{1}{4}$, $\frac{1}{2}$ remains unshaded.  
 
-Furthermore, it appears that as more and more terms are added, the sum should get closer and closer to $\answer{1}$.  
+Furthermore, it appears that as more and more terms are added, the sum should get closer and closer 
+to $\answer{1}$.  
+
+Here is GeoGebra sketch that allows you to explore similar series:  
+%https://www.geogebra.org/m/tbheatqn
+\begin{center}
+\geogebra{tbheatqn}{995}{370}
+\end{center}
 
 The following examples provide a general approach for geometric series.  
 \end{problem}
 \end{problem}
 \end{problem}
 
+
+
+%\begin{problem}
+%Use geometric series to explain how to convert repeating decimals to fractions to show they are rational numbers.  
+%\begin{enumerate}
+%\item  Express $0.232323...$ as geometric series.  Say how you know it is a geometric series.  Say also what it means to say it is an infinite geometric series.  
+%\item  Find a closed expression (without decimals) for the exact sum of the first $n$ terms of the geometric series.  What decimal number does this represent?   
+%\item  Explain what happens to that closed expression and to the decimal as $n$ increases to infinity. 
+%\item  Explain what you may now conclude about the infinite decimal $0.232323...$.  
+%\end{enumerate}
+%\end{problem}
+%
+
+
+\begin{problem}
+In this problem, we use geometric series to convert a repeating decimal to a fraction in order to show it 
+is a $\answer[format=string]{rational}$ number.  
+
+First express $0.\overline{23}=0.232323...$ as geometric series.  
+\[
+0.\overline{23}=\frac{23}{100}+\frac{23}{100^2}+\frac{23}{100^3}+\dots
+\]
+The series is geometric because the $\answer[format=string]{ratio}$ between consecutive terms is constant.  It equals $\answer{1/100}$.  
+
+The series is infinite because to be \textbf{equal} to $0.\overline{23}$, we need to sum an infinite number of terms.  Any finite number of terms will be only a(n) $\answer[format=string]{approximation}$.  
+
+\begin{problem}
+To demonstrate the technique rigorously, we begin with a \textbf{finite} geometric series and find a closed expression (without decimals) for the exact sum.  
+
+First, let 
+\[
+S=\frac{23}{100}+\frac{23}{100^2}+\frac{23}{100^3}+\dots+\frac{23}{100^n}
+\]
+Note that this is the finite decimal $0.2323 \dots 23$, with exactly $\answer{n}$ copies of the two repeating digits.  
+
+We multiply this equation by the common ratio $\answer{1/100}$ and place the two equations above/below one another so that identical terms align.  
+
+\[
+\begin{array}{ccccccccccccc}
+                     S &=& \frac{23}{100} &+& \frac{23}{100^2} &+& \frac{23}{100^3} &+& \dots &+& \frac{23}{100^n} \\ \\
+\answer{\frac{S}{100}} &=&                & & \frac{23}{100^2} &+& \frac{23}{100^3} &+& \dots &+& \frac{23}{100^n} 
+         &+& \answer{\frac{23}{100^{n+1}}}
+\end{array}
+\]
+\begin{problem}
+Then we $\answer[format=string]{subtract}$ the two equations so that most of the terms on the right vanish.  The result is a simpler equation: 
+\[
+S - \answer{\frac{S}{100}} = \frac{23}{100} - \answer{\frac{23}{100^{n+1}}},
+\]
+which we can solve for $S$.  
+\[
+S = \frac{\frac{23}{100} - \answer{\frac{23}{100^{n+1}}}}{1-\answer{\frac{1}{100}}}
+\]
+\begin{hint}
+Remember to factor out the $S$ on the left before dividing.  
+\end{hint}
+\begin{problem}
+As $n\rightarrow\infty$, $\frac{23}{100^{n+1}} \rightarrow\answer{0}$, so 
+\[
+S \rightarrow \frac{\answer{\frac{23}{100}}}{1-\frac{1}{100}}\text{, which simplifies to }\frac{\answer{23}}{\answer{99}}.
+\]
+From the original definition of $S$ above, when $n\rightarrow\infty$, we also have $S\rightarrow 0.\overline{23}$.  Therefore, 
+\[
+0.\overline{23}=\frac{\answer{23}}{\answer{99}},
+\]
+demonstrating that $0.\overline{23}$ is indeed a $\answer[format=string]{rational}$ number.  
+\end{problem}
+\end{problem}
+\end{problem}
+\end{problem}
 
 
 \end{document}
