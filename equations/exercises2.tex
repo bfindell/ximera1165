@@ -22,6 +22,9 @@ Problems about complex numbers.
 %\end{freeResponse}
 %\end{problem} 
 
+\begin{problem}
+Every complex number can be expressed as $a+bi$, where $a$ and $b$ are $\answer[format=string]{real}$ numbers.  
+\end{problem}
 
 \begin{problem}
 Which of the following are rational numbers?  Select all that apply.
@@ -67,11 +70,21 @@ Which of the following are complex numbers?  Select all that apply.
 	\choice[correct]{$\sqrt{-17}$}
 	\choice[correct]{$\sqrt[3]{-2}$}
 \end{selectAll}
+\begin{hint}
+Complex numbers include the real numbers.
+\end{hint}
+\begin{problem}
+Correct!  A complex number that is not real is typically called 
+$\answer[format=string]{imaginary}$. 
+
+A complex number of the form $a+bi$, where $a$ and $b$ are real numbers is \textbf{real} if $\answer{b}=0$ and 
+\textbf{pure imaginary} if $\answer{a}=0$.  
+\end{problem}
 \end{problem}
 
 
 \begin{problem}
-Assuming none of the numbers involved are zero, select all operations below which must produce an irrational number.
+Assuming none of the numbers involved are zero, select all operations below that must produce an irrational number.
 
 \begin{selectAll}
 	\choice{rational $+$ rational}
@@ -83,6 +96,7 @@ Assuming none of the numbers involved are zero, select all operations below whic
 \end{selectAll}
 \end{problem}
 
+In the following problems express the result in the form $a+bi$, with $a$ and $b$ real numbers.  
 
 \begin{problem}
 Find $(2+i) + 4$.
@@ -108,6 +122,16 @@ Find $(2-6i) - (3+8i)$.
 \end{problem}
 
 
+\begin{javascript}
+  a = Math.round(Math.random()*10)
+  b = Math.round(Math.random()*10)
+  c = Math.round(Math.random()*10)
+  d = Math.round(Math.random()*10)
+\end{javascript}
+
+\begin{problem}
+Compute $(\js{a}+\js{b}i)+(\js{c}+\js{d}i) = \begin{prompt} \answer{\js{a+b}} + \answer{\js{c+d}}\end{prompt}$
+\end{problem}
 
 
 \begin{problem}
@@ -169,7 +193,7 @@ Find all solutions to the equation $x^3-3x^2+5x-3=0$.
 \begin{hint} 
 The Rational Root Theorem combined with some division of polynomials might help!
 \end{hint}
-Enter your answers: first complex answers, and then real answers in order from smallest to largest.
+Enter your answers: first complex answers, and then real answers in order from least to greatest.
 
 \begin{prompt}
 $\answer[given]{1} + \answer[given]{\sqrt{2}}i$, $\answer[given]{1} - \answer[given]{\sqrt{2}}i$, $\answer[given]{1}$
@@ -182,7 +206,7 @@ Find all solutions to the equation $x^3+2x-3=0$.
 \begin{hint} 
 The Rational Root Theorem combined with some division of polynomials might help!
 \end{hint}
-Enter your answers: first complex answers, and then real answers in order from smallest to largest.
+Enter your answers: first complex answers, and then real answers in order from least to greatest.
 
 \begin{prompt}
 $\answer[given]{-\frac{1}{2}} + \answer[given]{\frac{\sqrt{11}}{2}}i$, $\answer[given]{-\frac{1}{2}} - \answer[given]{\frac{\sqrt{11}}{2}}i$, $\answer[given]{1}$
@@ -195,7 +219,7 @@ Find all solutions to the equation $x^4+6x^3+14x^2+30x+45=0$.
 \begin{hint} 
 The Rational Root Theorem combined with some division of polynomials might help!
 \end{hint}
-Enter your answers: first complex answers, and then real answers in order from smallest to largest.
+Enter your answers: first complex answers, and then real answers in order from least to greatest.
 
 \begin{prompt}
 $\answer[given]{0} + \answer[given]{\sqrt{5}}i$, $\answer[given]{0} - \answer[given]{\sqrt{5}}i$, $\answer[given]{-3}$, $\answer[given]{-3}$
