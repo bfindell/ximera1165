@@ -27,7 +27,7 @@ Problems about counting and probability.
 	Which of the following situations are the same type of counting situation?
 	
 	\begin{selectAll}
-		\choice{The number of ways to see two threes on four rolls of a 6-sided die.}
+		\choice{The number of ways to see two threes on four rolls of a 6-sided die.}. % Not sure about this one. 
 		\choice[correct]{The number of ways to flip a coin four times and see two heads.}
 		\choice{The number of ways to elect a President and Vice President from a group of four people.}
 		\choice[correct]{The number of ways to choose two students from a class of four.}
@@ -40,7 +40,7 @@ Problems about counting and probability.
 \begin{problem}
 Use the Binomial Theorem to expand $(a+b)^4$.
 \begin{prompt}
- $\answer{a^4+4a^3b+6a^2b^2+4ab^3+b^4}$
+ $\answer{a^4+\answer{4}a^\answer{3}b+\answer{6}a^2b^\answer{2}+\answer{4}ab^\answer{3}+b^4}$. % Oops: Ximera CAS accepts $(a+b)^4$
 \end{prompt}
 \end{problem}
 
@@ -48,7 +48,7 @@ Use the Binomial Theorem to expand $(a+b)^4$.
 \begin{problem}
 Use the Binomial Theorem to expand $(3-x)^6$.
 \begin{prompt}
- $\answer{729-1458x+1215x^2-540x^3+135x^4-18x^5+x^6}$
+ $\answer{729-1458x+1215x^2-540x^3+135x^4-18x^5+x^6}$  % Oops:  Ximera CAS accepts $(3-x)^6$
 \end{prompt}
 \end{problem}
 
@@ -63,6 +63,7 @@ Explain why ${n \choose k} = {n \choose n-k}$.
 \end{problem}
 
 
+% Maybe hide the next problem 
 
 \begin{problem}
 Explain why the sum of the entries in the $n$-th row of Pascal's Triangle is $2^n$.
@@ -140,7 +141,7 @@ In your own words, summarize the similarities and differences between the previo
 \begin{problem}
 A certain passcode is made by choosing two digits in $0$ to $9$ followed by three shapes (square, triangle, circle, or star).  How many such passcodes can be made?
 \begin{prompt}
-	$\answer[given]{6400}$
+	$\answer[given]{6400}$ % 10^2*4^3
 \end{prompt}
 \end{problem}
 
@@ -149,7 +150,7 @@ A certain passcode is made by choosing two digits in $0$ to $9$ followed by thre
 \begin{problem}
 A certain passcode is made by choosing two digits in $0$ to $9$ followed by three shapes (square, triangle, circle, or star).  How many such passcodes can be made if you cannot choose the same number or same shape more than once?
 \begin{prompt}
-	$\answer[given]{2160}$
+	$\answer[given]{2160}$ % 10*9*4*3*2 
 \end{prompt}
 \end{problem}
 
@@ -158,7 +159,7 @@ A certain passcode is made by choosing two digits in $0$ to $9$ followed by thre
 \begin{problem}
 A certain passcode is made by choosing five total symbols from the digits in $0$ to $9$ and the shapes in the collection (square, triangle, circle, or star).  How many such passcodes can be made if you cannot choose the same number or same shape more than once, but you can choose the numbers and shapes in any order?
 \begin{prompt}
-	$\answer[given]{240240}$
+	$\answer[given]{240240}$ % 14*13*12*11*10
 \end{prompt}
 \end{problem}
 
@@ -176,16 +177,15 @@ In your own words, summarize the similarities and differences between the previo
 In a magical dome, the probability that it will snow on any weekday is $10\%$, while the probability that it will snow on any weekend day is $60\%$.
 
 \begin{enumerate}
-	\item What is the probability that it will snow on both Monday and Tuesday? \begin{prompt} $\answer{0.01}$ \end{prompt}
-	\item What is the probability that it will snow on Monday and not snow on Tuesday? \begin{prompt} $\answer{0.09}$ \end{prompt}
-	\item What is the probability that it will snow on either Monday or Tuesday (but not both)? \begin{prompt} $\answer{0.18}$ \end{prompt}
-	\item What is the probability that it will not snow for a whole week? \begin{prompt} $\answer{0.0944784}$ \end{prompt}
-	\item What is the probability that it will snow on one weekday and not snow on the weekend? \begin{prompt} $\answer{0.052488}$ \end{prompt}
-	\item What is the probability that it will snow one day during a week? \begin{prompt} $\answer{0.3359232}$ \end{prompt}
+	\item What is the probability that it will snow on both Monday and Tuesday? \begin{prompt} $\answer{0.01}$ \end{prompt} % 0.1*0.1
+	\item What is the probability that it will snow on Monday and not snow on Tuesday? \begin{prompt} $\answer{0.09}$ \end{prompt} % 0.1*0.9
+	\item What is the probability that it will snow on either Monday or Tuesday (but not both)? \begin{prompt} $\answer{0.18}$ \end{prompt} % 0.1*0.9 + % 0.9*0.1
+	\item What is the probability that it will not snow for a whole week (including the weekend)? \begin{prompt} $\answer{0.0944784}$ \end{prompt} % 0.9^5*0.4^2
+	\item What is the probability that it will snow on one weekday and not snow on the weekend? \begin{prompt} $\answer{0.052488}$ \end{prompt}  % 5*0.9^4*.1*.4^2
+	\item What is the probability that it will snow one day during a week? \begin{prompt} $\answer{0.3359232}$ \end{prompt} % 5*0.9^4*.1*.4^2+0.9^5*0.6*0.4*2
+
 \end{enumerate}
 \end{problem}
-
-
 
 \end{document}
 
