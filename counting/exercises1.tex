@@ -27,7 +27,7 @@ Problems about counting and probability.
 	Which of the following situations are the same type of counting situation?
 	
 	\begin{selectAll}
-		\choice{The number of ways to see two threes on four rolls of a 6-sided die.}. % Not sure about this one. 
+		\choice{The number of ways to see two threes on four rolls of a 6-sided die.}. 
 		\choice[correct]{The number of ways to flip a coin four times and see two heads.}
 		\choice{The number of ways to elect a President and Vice President from a group of four people.}
 		\choice[correct]{The number of ways to choose two students from a class of four.}
@@ -40,7 +40,7 @@ Problems about counting and probability.
 \begin{problem}
 Use the Binomial Theorem to expand $(a+b)^4$.
 \begin{prompt}
- ${a^4+\answer{4}a^{\answer{3}}b+\answer{6}a^2b^{\answer{2}}+\answer{4}ab^{\answer{3}}+b^4}$. % Oops: Ximera CAS accepts $(a+b)^4$
+ $\answer{a^4+4a^3b+6a^2b^2+4ab^3+b^4}$. % Ximera CAS accepts $(a+b)^4$
 \end{prompt}
 \end{problem}
 
@@ -48,10 +48,29 @@ Use the Binomial Theorem to expand $(a+b)^4$.
 \begin{problem}
 Use the Binomial Theorem to expand $(3-x)^6$.
 \begin{prompt}
- $\answer{729-1458x+1215x^2-540x^3+135x^4-18x^5+x^6}$  % Oops:  Ximera CAS accepts $(3-x)^6$
+ $\answer{729-1458x+1215x^2-540x^3+135x^4-18x^5+x^6}$  % Ximera CAS accepts $(3-x)^6$
 \end{prompt}
 \end{problem}
 
+
+\begin{problem}
+Ignoring coefficients in the expansion of $(x+y)^9$, which of the following terms will appear?
+\begin{selectAll}
+\choice[correct]{$x^2y^7$}
+\choice{$x^5y^3$}
+\choice[correct]{$x^4y^5$}
+\choice{$x^9y$}
+\choice[correct]{$y^9$}
+\choice[correct]{$x^6$}
+\choice[correct]{$xy^8$}
+\end{selectAll}
+\begin{problem}
+Correct!  All of the terms will be of degree $\answer{9}$.  
+
+Furthermore, the coefficient of $x^2y^7$ will be $\answer{9\cdot 8/2}$, 
+and the coefficient of $x^6y^3$ will be $\answer{9\cdot 8\cdot 7/(2\cdot3)}$.
+\end{problem}
+\end{problem}
 
 \begin{problem}
 Explain why ${n \choose k} = {n \choose n-k}$.
@@ -65,14 +84,14 @@ Explain why ${n \choose k} = {n \choose n-k}$.
 
 % Maybe hide the next problem 
 
-\begin{problem}
-Explain why the sum of the entries in the $n$-th row of Pascal's Triangle is $2^n$.
-\begin{freeResponse}
-	\begin{hint}
-		Using the context of the pizza shop, the $n$-th row of Pascal's Triangle represents the total number of pizzas we could make if there are $n$ toppings available.  We could also count the number of pizzas as $2 \times 2 \times ... \times 2 = 2^n$, where we have two options for each pizza topping: on or off the pizza.  Remember that you should be able to use two contexts to explain this pattern!
-	\end{hint}
-\end{freeResponse}
-\end{problem}
+%\begin{problem}
+%Explain why the sum of the entries in the $n$-th row of Pascal's Triangle is $2^n$.
+%\begin{freeResponse}
+%	\begin{hint}
+%		Using the context of the pizza shop, the $n$-th row of Pascal's Triangle represents the total number of pizzas we could make if there are $n$ toppings available.  We could also count the number of pizzas as $2 \times 2 \times ... \times 2 = 2^n$, where we have two options for each pizza topping: on or off the pizza.  Remember that you should be able to use two contexts to explain this pattern!
+%	\end{hint}
+%\end{freeResponse}
+%\end{problem}
 
 
 
