@@ -27,11 +27,55 @@ These strategies can be combined.
 
 Some examples are given below. 
 
+\begin{problem}
+A wedding planner offers three different entr\'ees (Beef, Chicken, and Vegetarian), four different sides (Fruit, Hummus, Pasta, and Salad), and two desserts (Ice cream and Tiramis\`u).  List all of the dinner possibilities.  
+
+\begin{solution}
+List them in dictionary order: 
+\[
+\begin{array}{c}
+BFI \\
+\answer{BFT} \\
+\answer{BHI} \\
+\answer{BHT} \\
+\answer{BPI} \\
+\answer{BPT} \\
+\answer{BSI} \\
+\answer{BST} \\
+CFI \\
+\answer{CFT} \\
+\answer{CHI} \\
+\answer{CHT} \\
+\answer{CPI} \\
+\answer{CPT} \\
+\answer{CSI} \\
+\answer{CST} \\
+\answer{VFI} \\
+\answer{VFT} \\
+\answer{VHI} \\
+\answer{VHT} \\
+\answer{VPI} \\
+\answer{VPT} \\
+\answer{VSI} \\
+\answer{VST} 
+\end{array}
+\]
+Note that the entr\'ee is fixed first at \wordChoice{\choice[correct]{Beef} \choice{Chicken} \choice{Vegetarian}} with all of the possible side and dessert combinations, in dictionary order.  
+
+Note also that the structure of this listing can help explain \textbf{why} there are 
+$3\times\answer{4}\times\answer{2}=\answer{3\cdot 4\cdot 2}$ possible meals.  
+
+\end{solution}
+\end{problem}
+
+
 %\newpage 
 %\begin{problem}
 %List all of the factors of $5^3\cdot7^2\cdot11$. 
 %
 %\begin{solution}
+% Choosing a factor is choosing the exponent of each of $5$, $7$, and $11$. 
+% List the exponent triples in numerical order.  
 %\[
 %\begin{array}{c}
 %5^0\cdot7^0\cdot11^0 \\
