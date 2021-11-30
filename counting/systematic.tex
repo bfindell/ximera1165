@@ -1,0 +1,164 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Counting}
+\author{Bart Snapp and Brad Findell and Jenny Sheldon}
+\begin{document}
+\begin{abstract}
+Problems about systematic ordering.
+\end{abstract}
+\maketitle
+
+
+Easy counting problems are easy.  But in challenging counting problems, it becomes very important to use a systematic method for listing all of the possibilities.  Without a systematic approach, it is to easy to miss some possibilities or to    
+list other possibilities more than once (or both). 
+
+Here are some strategies that are very useful in solving such problems:  
+\begin{itemize}
+\item Fix one choice, and systematically change the other parts through all possibilities.  Change the first choice to the next option, and repeat.  
+\item List the possibilities in dictionary or numerical order, either forward or backward. 
+\item Organize the possibilities into ``types,'' and then be systematic within each type.  
+\item Intentionally overcount, and then adjust systematically.  
+\end{itemize}
+These strategies can be combined.  
+
+Some examples are given below. 
+
+\newpage 
+\begin{problem}
+List all of the factors of $5^3\cdot7^2\cdot11$. 
+
+\begin{solution}
+\[
+\begin{array}{c}
+5^0\cdot7^0\cdot11^0 \\
+5^0\cdot7^0\cdot11^1 \\
+5^0\cdot7^1\cdot11^0 \\
+\answer{5^0\cdot7^1\cdot11^1} \\
+\answer{5^0\cdot7^2\cdot11^0} \\
+\answer{5^0\cdot7^2\cdot11^1} \\ \\
+5^1\cdot7^0\cdot11^0 \\
+\answer{5^1\cdot7^0\cdot11^1} \\
+\answer{5^1\cdot7^1\cdot11^0} \\
+\answer{5^1\cdot7^1\cdot11^1} \\
+\answer{5^1\cdot7^2\cdot11^0} \\
+\answer{5^1\cdot7^2\cdot11^1} \\ \\
+5^2\cdot7^0\cdot11^0 \\
+\answer{5^2\cdot7^0\cdot11^1} \\
+\answer{5^2\cdot7^1\cdot11^0} \\
+\answer{5^2\cdot7^1\cdot11^1} \\
+\answer{5^2\cdot7^2\cdot11^0} \\
+\answer{5^2\cdot7^2\cdot11^1} \\ \\
+\answer{5^3\cdot7^0\cdot11^0} \\
+\answer{5^3\cdot7^0\cdot11^1} \\
+\answer{5^3\cdot7^1\cdot11^0} \\
+\answer{5^3\cdot7^1\cdot11^1} \\
+\answer{5^3\cdot7^2\cdot11^0} \\
+5^3\cdot7^2\cdot11^1
+\end{array}
+\]
+\end{solution}
+\end{problem}
+
+\newpage
+\begin{problem}
+List all right-rectangular prisms of volume 24 and whole-number sides.  Assume the three dimensions are distinguishable. 
+\begin{solution}
+\[
+\begin{array}{|c|c|c|}
+\hline
+\text{length} & \text{width} & \text{height} \\ 
+\hline
+1 & 1 & 24 \\
+1 & 2 & 12 \\
+1 & 3 & 8 \\
+1 & 4 & 6 \\
+1 & 6 & 4 \\
+1 & 8 & 3 \\
+1 & 12 & 2 \\
+1 & 24 & 1 \\
+2 & 1 & 12 \\
+2 & 2 & 6 \\
+2 & 3 & 4 \\
+2 & 4 & 3 \\
+2 & 6 & 2 \\
+2 & 12 & 1 \\
+3 & 1 & 8 \\
+3 & 2 & 4 \\
+3 & 4 & 2 \\
+3 & 8 & 1 \\
+4 & 1 & 6 \\
+4 & 2 & 3 \\
+4 & 3 & 2 \\
+4 & 6 & 1 \\
+6 & 1 & 4 \\
+6 & 2 & 2 \\
+6 & 4 & 1 \\
+8 & 1 & 3 \\
+8 & 3 & 1 \\
+12 & 1 & 2 \\
+12 & 2 & 1 \\
+24 & 1 & 1 \\
+\hline
+\end{array}
+\]
+\end{solution}
+\end{problem}
+
+\newpage
+\begin{problem}
+List all right-rectangular prisms of volume 24 and whole-number sides.  This time, the three dimensions are not distinguishable. 
+
+\begin{solution}
+To prevent overcounting, we require that 
+\[
+\text{length} \le \text{width} \le \text{height}. 
+\]
+\[
+\begin{array}{|c|c|c|}
+\hline
+\text{length} & \text{width} & \text{height} \\ 
+\hline
+1 & 1 & 24 \\
+\answer{1} & \answer{2} & \answer{12} \\
+\answer{1} & \answer{3} & \answer{8} \\
+\answer{1} & \answer{4} & \answer{6} \\
+\answer{2} & \answer{2} & \answer{6} \\
+\answer{2} & \answer{3} & \answer{4} \\
+\hline
+\end{array}
+\]
+\end{solution}
+\end{problem}
+
+
+\newpage
+\begin{problem}
+In the red/green light context, list all combinations of 2 red lights from among 5 lights.    
+\begin{solution}
+List in dictionary order: 
+\[
+\begin{array}{c}
+GGGRR \\
+\answer[format=string]{GGRGR} \\
+\answer[format=string]{GGRRG} \\
+\answer[format=string]{GRGGR} \\
+\answer[format=string]{GRGRG} \\
+\answer[format=string]{GRRGG} \\
+\answer[format=string]{RGGGR} \\
+\answer[format=string]{RGGRG} \\
+\answer[format=string]{RGRGG} \\
+\answer[format=string]{RRGGG}
+\end{array}
+\]
+\end{solution}
+\end{problem}
+
+
+\end{document}
+
+
+
