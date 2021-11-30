@@ -20,52 +20,52 @@ Here are some strategies that are very useful in solving such problems:
 \begin{itemize}
 \item Fix one choice, and systematically change the other parts through all possibilities.  Change the first choice to the next option, and repeat.  
 \item List the possibilities in dictionary or numerical order, either forward or backward. 
-\item Organize the possibilities into ``types,'' and then be systematic within each type.  
-\item Intentionally overcount, and then adjust systematically.  
+%\item Organize the possibilities into ``types,'' and then be systematic within each type.  
+%\item Intentionally overcount, and then adjust systematically.  
 \end{itemize}
 These strategies can be combined.  
 
 Some examples are given below. 
 
-\newpage 
-\begin{problem}
-List all of the factors of $5^3\cdot7^2\cdot11$. 
-
-\begin{solution}
-\[
-\begin{array}{c}
-5^0\cdot7^0\cdot11^0 \\
-5^0\cdot7^0\cdot11^1 \\
-5^0\cdot7^1\cdot11^0 \\
-\answer{5^0\cdot7^1\cdot11^1} \\
-\answer{5^0\cdot7^2\cdot11^0} \\
-\answer{5^0\cdot7^2\cdot11^1} \\ \\
-5^1\cdot7^0\cdot11^0 \\
-\answer{5^1\cdot7^0\cdot11^1} \\
-\answer{5^1\cdot7^1\cdot11^0} \\
-\answer{5^1\cdot7^1\cdot11^1} \\
-\answer{5^1\cdot7^2\cdot11^0} \\
-\answer{5^1\cdot7^2\cdot11^1} \\ \\
-5^2\cdot7^0\cdot11^0 \\
-\answer{5^2\cdot7^0\cdot11^1} \\
-\answer{5^2\cdot7^1\cdot11^0} \\
-\answer{5^2\cdot7^1\cdot11^1} \\
-\answer{5^2\cdot7^2\cdot11^0} \\
-\answer{5^2\cdot7^2\cdot11^1} \\ \\
-\answer{5^3\cdot7^0\cdot11^0} \\
-\answer{5^3\cdot7^0\cdot11^1} \\
-\answer{5^3\cdot7^1\cdot11^0} \\
-\answer{5^3\cdot7^1\cdot11^1} \\
-\answer{5^3\cdot7^2\cdot11^0} \\
-5^3\cdot7^2\cdot11^1
-\end{array}
-\]
-\end{solution}
-\end{problem}
+%\newpage 
+%\begin{problem}
+%List all of the factors of $5^3\cdot7^2\cdot11$. 
+%
+%\begin{solution}
+%\[
+%\begin{array}{c}
+%5^0\cdot7^0\cdot11^0 \\
+%5^0\cdot7^0\cdot11^1 \\
+%5^0\cdot7^1\cdot11^0 \\
+%\answer{5^0\cdot7^1\cdot11^1} \\
+%\answer{5^0\cdot7^2\cdot11^0} \\
+%\answer{5^0\cdot7^2\cdot11^1} \\ \\
+%5^1\cdot7^0\cdot11^0 \\
+%\answer{5^1\cdot7^0\cdot11^1} \\
+%\answer{5^1\cdot7^1\cdot11^0} \\
+%\answer{5^1\cdot7^1\cdot11^1} \\
+%\answer{5^1\cdot7^2\cdot11^0} \\
+%\answer{5^1\cdot7^2\cdot11^1} \\ \\
+%5^2\cdot7^0\cdot11^0 \\
+%\answer{5^2\cdot7^0\cdot11^1} \\
+%\answer{5^2\cdot7^1\cdot11^0} \\
+%\answer{5^2\cdot7^1\cdot11^1} \\
+%\answer{5^2\cdot7^2\cdot11^0} \\
+%\answer{5^2\cdot7^2\cdot11^1} \\ \\
+%\answer{5^3\cdot7^0\cdot11^0} \\
+%\answer{5^3\cdot7^0\cdot11^1} \\
+%\answer{5^3\cdot7^1\cdot11^0} \\
+%\answer{5^3\cdot7^1\cdot11^1} \\
+%\answer{5^3\cdot7^2\cdot11^0} \\
+%5^3\cdot7^2\cdot11^1
+%\end{array}
+%\]
+%\end{solution}
+%\end{problem}
 
 \newpage
 \begin{problem}
-List all right-rectangular prisms of volume 24 and whole-number sides.  Assume the three dimensions are distinguishable. 
+List all right-rectangular prisms of volume $24$ and whole-number sides.  Assume the three dimensions are distinguishable. 
 \begin{solution}
 \[
 \begin{array}{|c|c|c|}
@@ -105,12 +105,16 @@ List all right-rectangular prisms of volume 24 and whole-number sides.  Assume t
 \hline
 \end{array}
 \]
+In the solution, note when the length has been fixed, the width and height are systematically varied in order of increasing $\answer[format=string]{width}$. And once all of the width-height combinations have been exhausted, the 
+$\answer[format=string]{length}$ is changed to the next allowable value and ``refixed,'' and the width and height are again systematically varied.  
 \end{solution}
 \end{problem}
 
 \newpage
 \begin{problem}
-List all right-rectangular prisms of volume 24 and whole-number sides.  This time, the three dimensions are not distinguishable. 
+Some readers may complain that the above list contains much duplication.  And this would be true if we consider, for example, a $6\times4\times1$ prism to be the same as a $4\times1\times\answer{6}$ prism.  
+
+Again, list all right-rectangular prisms of volume $24$ and whole-number sides.  This time, the three dimensions are not distinguishable. 
 
 \begin{solution}
 To prevent overcounting, we require that 
@@ -137,23 +141,24 @@ To prevent overcounting, we require that
 
 \newpage
 \begin{problem}
-In the red/green light context, list all combinations of 2 red lights from among 5 lights.    
+In the red/green light context, list all combinations of $2$ red lights from among $5$ lights.    
 \begin{solution}
 List in dictionary order: 
 \[
 \begin{array}{c}
-GGGRR \\
+GGGRR \\ \\
 \answer[format=string]{GGRGR} \\
-\answer[format=string]{GGRRG} \\
+\answer[format=string]{GGRRG} \\ \\
 \answer[format=string]{GRGGR} \\
 \answer[format=string]{GRGRG} \\
-\answer[format=string]{GRRGG} \\
+\answer[format=string]{GRRGG} \\ \\
 \answer[format=string]{RGGGR} \\
 \answer[format=string]{RGGRG} \\
 \answer[format=string]{RGRGG} \\
 \answer[format=string]{RRGGG}
 \end{array}
 \]
+In the solution, note the separations demonstrating that once the first Red light is chosen, the second red light systematically varies among all possible remaining positions.  
 \end{solution}
 \end{problem}
 
