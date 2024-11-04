@@ -1,0 +1,174 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title{Exponential growth and decay}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Percent increase and decrease; exponential growth and decay. % exponential functions, and the rules of exponents. 
+\end{abstract}
+\maketitle
+
+
+%\begin{problem}
+%Problem
+%\begin{freeResponse}
+%\begin{hint}
+%Hint
+%\end{hint}
+%\end{freeResponse}
+%\end{problem} 
+
+
+%Percent growth or decay -> exponential growth
+%	What is your answer? 
+%	Naive way to do it (fill-in blank)
+%	Sophisticated way to do it (fill-in blank)
+%	Why does it work? Distributive property.  
+%Explaining rules of exponents
+%Exponential growth in context.  Where does your explicit formula work?  (0, negative, non-integer)
+%Backwards in time
+
+
+\begin{problem}
+The population of Metroville is $380,\!000$ in January $2024$, and it has been growing at $3\%$ per year.  We say the \emph{growth rate} has been $3\%$.  
+
+What will the population be January $2025$?  $\answer{380000*1.03}$.  
+\begin{problem}
+Correct!  
+
+Some people make the computations as follows:  First, compute $3\%$ of the population, which is $\answer{0.03*380000}$.  Then add that to the original population.  
+
+Other people use a more efficient method:  Just multiply $380,\!000$ by $\answer{1.03}$.  
+
+\begin{problem}
+Question: Why are these methods both correct?  In other words, why is  
+\[
+0.03\cdot 380,\!000 + 380,\!000 = 1.03 \cdot 380,\!000?  
+\]
+Answer: By the $\answer[format=string]{distributive}$ property, thinking of $380,\!000$ as a common $\answer[format=string]{factor}$. 
+
+\begin{problem}
+When thinking of growth in percentage terms, it helps to distinguish the \emph{growth rate}, in this case $3\%$, from the 
+\emph{growth factor}, which is $1.03$.  And it often helps to think of the growth factor in percentage terms, for after 1 year, 
+the population will be $103\%$ of the starting population.  
+
+We can generalize these ideas as follows:  If a quantity $P$ is growing at a growth rate of $r$ (written as a decimal, interpreted as a percent), then after one unit of time, the 
+new quantity will be $rP + P$, which can be factored as $\left(\answer{1+r}\right)P$.  In other words, when the growth rate is $r$, the growth factor is $\answer{1+r}$.  
+
+\end{problem}
+\end{problem}
+\end{problem}
+\end{problem}
+
+\begin{problem}
+Kayla purchased a new car for $\$16,\!000$ in January $2024$.  But once a car has been driven off the lot, it \emph{depreciates}, which is to say it loses value.  Kayla's accountant tells here that in normal economic times and with typical annual driving, her car will depreciate about $8\%$ per year.  
+
+Using this rate of depreciation, what will the value of the car be in January $2025$?  $\answer{16000*0.92}$ dollars.  
+\begin{problem}
+Correct!  
+
+Some people make the computations as follows:  First, compute $8\%$ of the purchase price, which is $\answer{0.08*16000}$ dollars.  Then subtract that from the purchase price.  
+
+Other people use a more efficient method:  Just multiply $\$16,\!000$ by $\answer{0.92}$.  
+
+\begin{problem}
+Question: Why are these methods both correct?  In other words, why is  
+\[
+160,\!000 - 0.08\cdot 160,\!000 = 0.92 \cdot 160,\!000?  
+\]
+Answer: By the $\answer[format=string]{distributive}$ property, thinking of $16,\!000$ as a common $\answer[format=string]{factor}$. 
+
+\begin{problem}
+In finance, the opposite of depreciation is \emph{appreciation}, which means an increase in value.  In mathematics, appreciation and depreciation are examples of \emph{growth and decay}
+ 
+When thinking of decay in percentage terms, it helps to distinguish the \emph{decay rate}, in this case $8\%$, from the 
+\emph{decay factor}, which is $0.92$.  And it often helps to think of the decay factor in percentage terms, for after 1 year, 
+the value of the car will be $92\%$ of the purchase price.  
+
+We can generalize these ideas as follows:  If a quantity $P$ is decaying at a rate of $r$ (written as a decimal, interpreted as a percent), then after one unit of time, the 
+new quantity will be $P - rP$, which can be factored as $\left(\answer{1-r}\right)P$.  In other words, when the decay rate is $r$, the decay factor is $\answer{1-r}$.  
+
+\end{problem}
+\end{problem}
+\end{problem}
+\end{problem}
+
+
+\begin{problem}
+Back to Metroville, where the population was $380,\!000$ in January $2024$, and it has been growing at $3\%$ per year.  
+
+Write a recursive function for this situation:  
+
+\begin{prompt}
+$f(n+1) = \wordChoice{\choice{380,\!000}\choice[correct]{f(n)}\choice{f(n-1}\choice{3\%}}\wordChoice{\choice{+}\choice{-}\choice[correct]{\times}\choice{\div}\choice{\wedge}}\answer{1.03}$.
+\end{prompt}
+\begin{problem}
+Using January 2024 as ``year 0,'' so that $f(0)=380000$,  write an explicit formula (without commas) to model this situation: 
+\begin{prompt}
+$f(t) = \answer{380000\cdot 1.03^t}$.
+\end{prompt}
+
+\begin{problem}
+Use your explicit formula to compute the following values when the input value makes sense.  If the input value does not make sense in the domain of the value, enter `NA' without quotes.
+\begin{enumerate}
+\item $f(-104) = \answer{NA}$
+\item $f(-3) = \answer[tolerance=100]{380000\cdot 1.03^{-3}}$
+\item $f(2.5) = \answer[tolerance=100]{380000\cdot 1.03^{2.5}}$
+\item $f(4) = \answer[tolerance=100]{380000\cdot 1.03^4}$
+\item $f(220) = \answer{NA}$
+\end{enumerate}
+\begin{problem}
+Correct!  Some of these make sense in the context.  For example, $f(-3)$ would approximate the population in January $\answer{2021}$, $f(4)$ would approximate the population in January $\answer{2028}$, and $f(2.5)$ would approximate the population in $\answer[format=string]{July}$ (month) $\answer{2026}$ (year).  
+
+But $f(-104)$ would mean the population in $\answer{1920}$, before major world-changing events like World War II and the Great Depression.  Similarly, $f(220)$ would mean the population in $\answer{2444}$, and there are likely to be several world-changing events before then.  
+
+\end{problem}
+
+\end{problem}
+\end{problem}
+
+\end{problem}
+
+
+\begin{problem}
+Back to Kayla's new car, which she purchased for $\$16,\!000$ in January $2024$, and is estimated to depreciate $8\%$ per year.  
+
+Write a recursive function for this situation:  
+
+\begin{prompt}
+$f(n+1) = \wordChoice{\choice{16,\!000}\choice[correct]{f(n)}\choice{f(n-1}\choice{8\%}}\wordChoice{\choice{+}\choice{-}\choice[correct]{\times}\choice{\div}\choice{\wedge}}\answer{0.92}$.
+\end{prompt}
+\begin{problem}
+Using January 2024 as ``year 0,'' so that $f(0)=16000$,  write an explicit formula (without commas) to model this situation: 
+\begin{prompt}
+$f(t) = \answer{16000\cdot 0.92^t}$.
+\end{prompt}
+
+\begin{problem}
+Use your explicit formula to compute the following values when the input value makes sense.  If the input value does not make sense in the domain of the value, enter `NA' without quotes.
+\begin{enumerate}
+\item $f(-3) = \answer{NA}$
+\item $f(1.75) = \answer[tolerance=10]{16000\cdot 1.03^{1.75}}$
+\item $f(6) = \answer[tolerance=10]{16000\cdot 1.03^6}$
+\item $f(30) = \answer{NA}$
+\end{enumerate}
+\begin{problem}
+Correct!  Some of these make sense in the context.  For example, $f(5)$ would approximate the car's value in January $\answer{2030}$, and $f(1.75)$ would approximate the car's value in $\answer[format=string]{October}$ (month) $\answer{2025}$ (year).  
+
+But $f(-3)$ would mean the car's value in $\answer{1921}$, before it was built.  Also, $f(30)$ would mean the car's value in $\answer{2054}$, when it is unlikely to be still road-worthy.  If it is road-worthy, it will be an antique.    
+
+\end{problem}
+
+\end{problem}
+\end{problem}
+\end{problem}
+
+
+\end{document}
+
+
+
