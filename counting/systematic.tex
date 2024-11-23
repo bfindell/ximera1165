@@ -23,7 +23,8 @@ Here are some strategies that are very useful when solving such problems:
 %\item Organize the possibilities into ``types,'' and then be systematic within each type.  
 %\item Intentionally overcount, and then adjust systematically.  
 \end{itemize}
-These strategies can be combined.  
+These strategies can be combined.  And a ``road map'' can help you manage the process.     
+
 
 Some examples are given below. 
 
@@ -64,6 +65,34 @@ Note that the entr\'ee is fixed first at \wordChoice{\choice[correct]{Beef} \cho
 
 Note also that the structure of this listing can help explain \textbf{why} there are 
 $3\times\answer{4}\times\answer{2}=\answer{3\cdot 4\cdot 2}$ possible meals.  
+
+Here is a road map that can help you imagine the above list as a process of systematically traveling all possible roads: 
+\begin{center}
+\begin{tikzpicture}
+  \fill (0,0) circle (1.6pt);
+%  \node [left] at (0,0) {$A$};
+  \node [above] at (0.6,0.5) {$B$};
+  \node [above] at (1.2,0) {$C$};
+  \node [below] at  (0.6,-0.5) {$V$};
+  \draw (0,0) to [out=45,in=135 ] (3,0);
+  \draw (0,0) to (3,0);
+  \draw (0,0) to [out=315,in=225] (3,0);
+  \node [above] at (3.3,1.0) {$F$};
+  \node [above] at (3.8,0.5) {$H$};
+  \node [below] at  (3.8,-0.5) {$P$};
+  \node [below] at  (3.3,-1.0) {$S$};
+  \draw (3,0) to [out=45,in=135 ] (6,0);
+  \draw (3,0) to [out=315,in=225] (6,0);
+  \draw (4.5,0) circle (1.5);
+  \node [above] at (6.6,0.5) {$I$};
+  \node [below] at  (6.6,-0.5) {$T$};
+  \draw (6,0) to [out=45,in=135 ] (9,0);
+  \draw (6,0) to [out=315,in=225] (9,0);
+  \fill (9,0) circle (1.6pt);
+%  \node [right] at (8,0) {$B$};
+\end{tikzpicture}
+\end{center}
+
 
 \end{solution}
 \end{problem}
