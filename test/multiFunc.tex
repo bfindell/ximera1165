@@ -19,13 +19,11 @@ function multiAns(f,g) {
     // Start out by duplicating the vector of answers to use later.
     instructorAnsbkup = JSON.parse(JSON.stringify(g.tree));
     
-    /* //   Debug Code - commented out now that it is working.
-    console.log('Here is the student ans.');
-    console.log(f);
+     //   Debug Code - commented out now that it is working.
+    console.log('Here is the student ans.', f);
     
-    console.log('Here is the instructor ans.');
-    console.log(g);
-    */
+    console.log('Here is the instructor ans.', g);
+    
     
     for (var i = 1; i <= instructorAnsbkup.length; ++i) {
         g.tree = instructorAnsbkup[i];
@@ -49,6 +47,20 @@ return false
         The following answer prompt will accept any of the following functions as correct: $\sin(t)$, $\tan(x)$, $e^\pi$, $21x^3 + 1$, $ex + \pi$.
         \[
             \answer[validator=multiAns]{[\sin(t),\tan(x),e^\pi,21x^3 + 1,ex + \pi]}
+        \]
+    \end{problem}
+
+    \begin{problem}
+        The following answer prompt will accept any of the following functions as correct: [1,4,5,'x']. 
+        \[
+            \answer[validator=multiAns]{[1,4,5,'x']}
+        \]
+    \end{problem}
+
+    \begin{problem}
+        The following answer prompt will accept any of the following functions as correct: ['ABC','CBA']. 
+        \[
+            \answer[validator=multiAns]{['ABC','CBA']}
         \]
     \end{problem}
 
