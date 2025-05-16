@@ -1,0 +1,47 @@
+\documentclass{ximera}
+\input{../preamble}
+\title{multiAns}
+\begin{document}
+\begin{abstract}
+    Demonstrates a way to provide multiple acceptable answers from students.
+\end{abstract}
+\maketitle
+
+\begin{javascript}
+
+function multiAns(f,gArray) {
+          
+    console.log('Here is the student answer', f);   
+    console.log('Here are the instructor answers', gArray);
+     
+    for (var i = 0; i < gArray.length; ++i) {
+        g = gArray[i];
+        console.log('inside the for loop for checking...', g);
+        if (f==g){
+            return true
+        }
+    }
+return false
+}
+  
+\end{javascript}
+
+\subsection*{What it does}
+    This validator allows an instructor to provide a list of acceptable answers for a given answer prompt.
+
+\subsection*{Example}
+    \begin{problem}
+        The following answer prompt will accept any of the following functions as correct: [1,4,5,'x']. 
+        \[
+            \answer[validator=multiAns]{[1,4,5,'x']}
+        \]
+    \end{problem}
+
+    \begin{problem}
+        The following answer prompt will accept any of the following functions as correct: ['ABC','CBA']. 
+        \[
+            \answer[validator=multiAns]{['ABC','CBA']}
+        \]
+    \end{problem}
+
+\end{document}

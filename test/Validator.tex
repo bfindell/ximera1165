@@ -1,0 +1,30 @@
+
+\documentclass[nooutcomes]{ximera}
+%\documentclass[space,handout,nooutcomes]{ximera}
+
+
+\input{../preamble.tex}
+
+
+\title{Validator Testing}
+\author{Bart Snapp and Brad Findell and Jenny Sheldon}
+\begin{document}
+\begin{abstract}
+Validator.
+\end{abstract}
+\maketitle
+
+\begin{problem}
+Find a vector $u$ normal to the plane $2x+2y+z=3$.
+  \begin{prompt}
+    \begin{validator}[(ux==uy) && (uy==2*uz) && (uy != 0)]
+      \(
+        u = \left( \answer[format=integer,id=ux]{2}, \answer[format=integer,id=uy]{2}, \answer[format=integer,id=uz]{1} \right)
+      \)
+    \end{validator}
+  \end{prompt}
+
+  \end{problem}
+  \end{document}
+  
+  
