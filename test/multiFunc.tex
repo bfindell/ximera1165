@@ -53,14 +53,21 @@ return false
     \begin{problem}
         The following answer prompt will accept any of the following functions as correct: [1,4,5,'x']. 
         \[
-            \answer[validator=multiAns]{[1,4,5,'x']}
+            \answer[format=integer,validator=multiAns]{[1,4,5,'x']}
+        \]
+    \end{problem}
+
+    \begin{problem}
+        The following answer prompt will accept any of the following functions as correct: [1,4,5,'x']. 
+        \[
+            \answer[format=string,validator=multiAns]{[1,4,5,'x']}
         \]
     \end{problem}
 
     \begin{problem}
         The following answer prompt will accept any of the following functions as correct: ['ABC','CBA']. 
         \[
-            \answer[validator=multiAns]{['ABC','CBA']}
+            \answer[format=string,validator=multiAns]{[ABC,CBA]}
         \]
     \end{problem}
 
